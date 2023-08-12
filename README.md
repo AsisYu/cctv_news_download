@@ -13,11 +13,10 @@ f12打开控制台，找到：
 ![image](https://github.com/mcmtYu/cctv_news_download/assets/68932312/06721f53-2005-4637-bea5-86fe3df17c72)
 
 
-把该文件的链接复制下来，再到PyCharm运行cctv.py文件粘贴链接开始下载
+把该文件的链接复制下来，再到PyCharm运行mian.py文件粘贴链接开始下载
 
 ![image](https://github.com/mcmtYu/cctv_news_download/assets/68932312/e5621fc2-675d-40c6-97ce-e0d9c8df2293)
 
 下载的视频保存在cctv.py目录的日期文件夹里。
 结束
 
-![(M$)YZNQIGPXF$E6X~@U0)4](https://github.com/mcmtYu/cctv_news_download/assets/68932312/326c53a4-d8ee-4387-b372-8e969150fabc)
