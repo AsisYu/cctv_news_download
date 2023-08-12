@@ -1,8 +1,9 @@
 
-通过py获取getHttpVideoInfo.do?pid=3...文件内的视频链接地址进行下载原视频，但是未实现视频合并功能![(M$)YZNQIGPXF$E6X~@U0)4](https://github.com/mcmtYu/cctv_news_download/assets/68932312/8a13df81-5af9-410d-b88f-f44ad1cd4ea8)
+通过py获取getHttpVideoInfo.do?pid=3...文件内的视频链接地址进行下载原视频，但是未实现视频合并功能（已实现）![(M$)YZNQIGPXF$E6X~@U0)4](https://github.com/mcmtYu/cctv_news_download/assets/68932312/8a13df81-5af9-410d-b88f-f44ad1cd4ea8)
 
 
 # 如何使用？
+windows：
 首先打开cctv新闻联播官网
 ![image](https://github.com/mcmtYu/cctv_news_download/assets/68932312/6428796a-3dc7-46b9-a222-01eb89bda9f3)
 
