@@ -1,10 +1,11 @@
 
+# # 功能介绍
 通过py获取getHttpVideoInfo.do?pid=3...文件内的视频链接地址进行下载原视频，但是未实现视频合并功能（已实现）![(M$)YZNQIGPXF$E6X~@U0)4](https://github.com/mcmtYu/cctv_news_download/assets/68932312/8a13df81-5af9-410d-b88f-f44ad1cd4ea8)
 
 
-# 如何使用？
-windows：
-首先打开cctv新闻联播官网
+# # 如何使用？
+#### # windows：
+首先打开[cctv新闻联播官网](https://tv.cctv.com/lm/xwlb/?spm=C94212.P4YnMod9m2uD.EfOoEZcMXuiv.1 "cctv新闻联播官网")
 ![image](https://github.com/mcmtYu/cctv_news_download/assets/68932312/6428796a-3dc7-46b9-a222-01eb89bda9f3)
 
 
@@ -19,5 +20,11 @@ f12打开控制台，找到：
 ![image](https://github.com/mcmtYu/cctv_news_download/assets/68932312/e5621fc2-675d-40c6-97ce-e0d9c8df2293)
 
 下载的视频保存在cctv.py目录的日期文件夹里。
+
 结束
+#### # linux：
+在写了。。。
+![23280591](https://github.com/mcmtYu/cctv_news_download/assets/68932312/9a785d9b-624a-4354-8046-c3f7e9518a2c)
+
+
 
