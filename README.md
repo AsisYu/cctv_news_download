@@ -13,7 +13,23 @@
 
 #  如何使用？
 ##### windows：
-首先打开[cctv新闻联播官网](https://tv.cctv.com/lm/xwlb/?spm=C94212.P4YnMod9m2uD.EfOoEZcMXuiv.1 "cctv新闻联播官网")
+安装一下必须的第三方插件：
+
+```shell
+pip install requests
+
+```
+用于发送 HTTP 请求，并下载文件内容
+
+
+```shell
+pip install moviepy
+
+```
+用于视频处理和编辑
+
+
+然后打开[cctv新闻联播官网](https://tv.cctv.com/lm/xwlb/?spm=C94212.P4YnMod9m2uD.EfOoEZcMXuiv.1 "cctv新闻联播官网")
 ![image](https://github.com/mcmtYu/cctv_news_download/assets/68932312/6428796a-3dc7-46b9-a222-01eb89bda9f3)
 
 
