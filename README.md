@@ -13,7 +13,7 @@ f12打开控制台，找到：
 ![image](https://github.com/mcmtYu/cctv_news_download/assets/68932312/06721f53-2005-4637-bea5-86fe3df17c72)
 
 
-把该文件的链接复制下来，再到PyCharm运行mian.py文件粘贴链接开始下载
+把该文件的链接复制下来，下载mian、search、merge三个py文件后放在同一目录，PyCharm运行mian.py文件粘贴链接开始下载
 
 ![image](https://github.com/mcmtYu/cctv_news_download/assets/68932312/e5621fc2-675d-40c6-97ce-e0d9c8df2293)
 
