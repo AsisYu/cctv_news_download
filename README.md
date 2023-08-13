@@ -43,7 +43,7 @@ f12打开控制台，找到：
 
 ![image](https://github.com/mcmtYu/cctv_news_download/assets/68932312/e5621fc2-675d-40c6-97ce-e0d9c8df2293)
 
-下载的视频保存在cctv.py目录的日期文件夹里。
+合并后的视频保存在根目录，merged.mp4
 
 结束
 ##### linux
