@@ -13,6 +13,7 @@
 
 #  如何使用？
 ##### windows：
+安装PyCharm（可选）
 安装一下必须的第三方插件：
 
 ```shell
@@ -51,7 +52,7 @@ f12打开控制台，找到：
 
 ------------
 
-提一嘴，下载视频速度取决于设备网速，合并视频速度取决cpu。
+提一嘴，下载视频速度取决于设备网速，合并视频速度取决cpu
 ![image](https://github.com/mcmtYu/cctv_news_download/assets/68932312/f7f10ccd-50ee-4854-ba0f-e246e2a3a9d5)
 
 ![23280591](https://github.com/mcmtYu/cctv_news_download/assets/68932312/9a785d9b-624a-4354-8046-c3f7e9518a2c)
