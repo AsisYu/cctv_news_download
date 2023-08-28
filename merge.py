@@ -53,5 +53,5 @@ log_file_path = os.path.join(log_folder, f"hlog_{datetime.datetime.now().strftim
 # 记录日志
 now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 log_file = open(log_file_path, "w")
-log_file.write(f"[{now}] 视频文件合并完成：{folder_path} -> {output_path}\n")
+log_file.write(f"[{now}] 视频文件合并完成：{folder_path}\n")
 log_file.close()
