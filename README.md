@@ -40,22 +40,20 @@ f12打开控制台，找到：
 ![image](https://github.com/mcmtYu/cctv_news_download/assets/68932312/06721f53-2005-4637-bea5-86fe3df17c72)
 
 
-把该文件的链接复制下来，下载mian、search、merge三个py文件后放在同一目录，PyCharm运行mian.py文件粘贴链接开始下载
+把该文件的链接复制下来，下载mian、search、merge三个py文件后放在同一目录，调出cmd，运行main.py粘贴链接地址等着就行了
 
-![image](https://github.com/mcmtYu/cctv_news_download/assets/68932312/e5621fc2-675d-40c6-97ce-e0d9c8df2293)
+![Uploading I((`H0EGEQ]OZL9KWHB)Z}U.png…]()
 
 合并后的视频保存在根目录，merged.mp4
 
 结束
-##### linux
-在写了。。。
 
 ------------
 
 提一嘴，下载视频速度取决于设备网速，合并视频速度取决cpu
 ![image](https://github.com/mcmtYu/cctv_news_download/assets/68932312/f7f10ccd-50ee-4854-ba0f-e246e2a3a9d5)
 
-![23280591](https://github.com/mcmtYu/cctv_news_download/assets/68932312/9a785d9b-624a-4354-8046-c3f7e9518a2c)
+
 
 
 
