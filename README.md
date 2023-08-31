@@ -12,8 +12,7 @@
 
 
 #  如何使用？
-##### windows：
-安装PyCharm（可选）
+安装python
 安装一下必须的第三方插件：
 
 ```shell
@@ -40,9 +39,10 @@ f12打开控制台，找到：
 ![image](https://github.com/mcmtYu/cctv_news_download/assets/68932312/06721f53-2005-4637-bea5-86fe3df17c72)
 
 
-把该文件的链接复制下来，下载mian、search、merge三个py文件后放在同一目录，调出cmd，运行main.py粘贴链接地址等着就行了
+把该文件的链接复制下来，下载mian、search、merge三个py文件后放在同一目录，调出cmd，运行main.py粘贴链接地址等着就行了（linux同理）
 
-![Uploading I((`H0EGEQ]OZL9KWHB)Z}U.png…]()
+![I((`H0EGEQ OZL9KWHB)Z}U](https://github.com/AsisYu/cctv_news_download/assets/68932312/51e376a2-16ef-498e-9ec9-30cb3e604498)
+
 
 合并后的视频保存在根目录，merged.mp4
 
