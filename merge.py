@@ -1,7 +1,12 @@
 import os
 import glob
+import shutil
 import datetime
 import moviepy.editor as mp
+
+# 创建 log 文件夹
+log_folder = "log"
+os.makedirs(log_folder, exist_ok=True)
 
 # 获取今天的日期
 today = datetime.date.today().strftime("%Y-%m-%d")
@@ -14,7 +19,17 @@ files = glob.glob(os.path.join(folder_path, "*.mp4"))
 files.sort(key=lambda x: int(x.split("-")[-1].split(".")[0]))
 
 if len(files) < 2:
-    print("文件夹内的视频文件数量不足，无法进行合并。")
+    if len(files) == 0:
+        print("无视频文件！")
+    else:
+        print("文件夹内的视频文件数量不足2个，无法进行合并。")
+        # 获取文件名
+        filename = os.path.basename(files[0])
+        # 构造目标路径
+        target_path = os.path.join(os.getcwd(), filename)
+        # 移动文件
+        shutil.move(files[0], target_path)
+        print(f"文件移动完成！目标路径：{target_path}")
 else:
     # 创建一个空的 VideoClip 列表
     video_clips = []
@@ -43,15 +58,13 @@ else:
     except Exception as e:
         print(f"视频文件合并失败：{e}")
 
-# 创建 log 文件夹
-log_folder = "log"
-os.makedirs(log_folder, exist_ok=True)
+        # 记录日志
+        now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        log_file = open(log_file_path, "w")
+        log_file.write(f"[{now}] 视频文件合并完成：{folder_path} -> {output_path}\n")
+        log_file.close()
+
 
 # 创建控制台日志文件 hlog.txt，并将日志记录到文件中
 log_file_path = os.path.join(log_folder, f"hlog_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.txt")
 
-# 记录日志
-now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-log_file = open(log_file_path, "w")
-log_file.write(f"[{now}] 视频文件合并完成：{folder_path}\n")
-log_file.close()
