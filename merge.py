@@ -59,7 +59,7 @@ else:
         print(f"视频文件合并失败：{e}")
 
         # 记录日志
-        now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        现在 = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         log_file = open(log_file_path, "w")
         log_file.write(f"[{now}] 视频文件合并完成：{folder_path} -> {output_path}\n")
         log_file.close()
@@ -67,4 +67,3 @@ else:
 
 # 创建控制台日志文件 hlog.txt，并将日志记录到文件中
 log_file_path = os.path.join(log_folder, f"hlog_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.txt")
-
