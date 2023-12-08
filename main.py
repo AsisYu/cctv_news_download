@@ -5,7 +5,6 @@ import requests
 import datetime
 import logging
 
-
 # 创建 log 文件夹
 log_folder = "log"
 os.makedirs(log_folder, exist_ok=True)
