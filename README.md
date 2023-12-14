@@ -1,12 +1,8 @@
 
 # # 功能介绍
-通过py获取getHttpVideoInfo.do?pid=3...文件内的视频链接地址进行下载原视频，~~但是未实现视频合并功能~~（已实现）
+通过py获取getHttpVideoInfo.do?pid=3...文件内的视频链接地址进行下载原视频，~~但是未实现视频合并功能~~（已实现），自动化下载合并正在测试
 
 ------------
-
-
-![(M$)YZNQIGPXF$E6X~@U0)4](https://github.com/mcmtYu/cctv_news_download/assets/68932312/8a13df81-5af9-410d-b88f-f44ad1cd4ea8)
-
 
 ------------
 
