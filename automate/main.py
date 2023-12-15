@@ -11,18 +11,17 @@ from datetime import datetime
 from selenium.common.exceptions import TimeoutException
 import calendar
 
+text = "开始自动获取到getHttpVideoInfo.do?此过程不会进行下载合并!"
+text2 = "获取结束!"
 
-def get_all_days(year, month):
+def get_all_days(year， month):
     # 获取指定月份的天数
-    num_days = calendar.monthrange(year, month)[1]
-
+    num_days = calendar.monthrange(year， month)[1]
     # 存储每一天的日期
     dates = []
-
     # 遍历每一天，将其存储在列表中
     for day in range(1, num_days + 1):
-        dates.append((year, month, day))
-
+        dates.append((year， month, day))
     return dates
 
 def get_uid_and_vdnAdStaticCheck(url):
@@ -38,7 +37,7 @@ def get_uid_and_vdnAdStaticCheck(url):
     retry_count = 0
     while retry_count < max_retries:
         try:
-            WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+            WebDriverWait(driver， 20).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
             # 如果成功找到元素，则继续执行后续代码
             break
         except TimeoutException:
@@ -68,7 +67,7 @@ def get_cctv_pids_and_links(url):
     # 发送请求，获取页面内容
     browser.get(url)
     # 等待 class 为 "jvedio" 的 div 元素出现
-    wait = WebDriverWait(browser, 20)
+    wait = WebDriverWait(browser， 20)
     max_attempts = 3
     attempts = 0
     while attempts < max_attempts:
@@ -97,6 +96,7 @@ def get_cctv_pids_and_links(url):
             link_list.append(link)
     return {"pid_list": pid_list, "link_list": link_list}
 if __name__ == "__main__":
+    print(text)
     # 用户输入年份和月份
     year = int(input("请输入你想下载的年份："))
     month = int(input("请输入你想下载的月份："))
@@ -104,8 +104,15 @@ if __name__ == "__main__":
     # 创建 tmp 文件夹
     os.makedirs('tmp', exist_ok=True)
 
-    # 确定 get_link.txt 的路径
-    link_file = 'tmp/get_link.txt'
+    # 确定 get_link 的路径
+    link_file = 'tmp/get_link'
+    date_file = 'tmp/date'
+
+    # 存储输入日期
+    year_str = str(year)
+    month_str = str(month)
+    with open(date_file, 'a') as f:
+        f.write(year_str+"-"+month_str+ '\n')
 
     # 调用函数获取全部天数的日期
     all_dates = get_all_days(year, month)
@@ -136,3 +143,9 @@ if __name__ == "__main__":
                 "&client=flash&im=0&tsp="+timestamp + \
                 "&vn=2049&vc=" + md5_p + "&uid=" + uid_and_vdnAdStaticCheck["uid"] + "&wlan="
             print(video_link)
+
+            # 写入 video_link 到 get_link 文件
+            with open(link_file, 'a') as f:
+                f.write(year_str+"-"+month_str+"-"+day_str+":"+video_link + '\n')
+                break   # 只写入第一行内容
+    print(text2)
