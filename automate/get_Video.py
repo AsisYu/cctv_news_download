@@ -6,7 +6,10 @@ import datetime
 import logging
 import subprocess
 import calendar
-
+import glob
+import shutil
+import datetime
+import moviepy.editor as mp
 
 tmp_dir = 'tmp'
 file_path = 'tmp/get_link'
@@ -107,9 +110,9 @@ def download_link(link, folder_path):
     with open(file_path, "wb") as file:
         file.write(response.content)
 
-def download_video(out_file_path):
+def download_video(out_file_path, video_folder_path):
     read_file_path = out_file_path+"/video-link"
-    outvideo_file_path = out_file_path+"/dvideo"
+    outvideo_file_path = video_folder_path
     try:
         filtered_links = []
 
@@ -120,15 +123,71 @@ def download_video(out_file_path):
                     filtered_links.append(line.strip())
 
         # 下载链接文件中的文件并保存到今天日期的文件夹中
-        for link in filtered_links:
-            download_link(link, outvideo_file_path)
-
-        print("文件已下载至对应日期的文件夹中，即将进行视频合并，中途请勿退出...")
-        return
+        #先判断一手目录是否有足够视频
+        # 获取视频文件夹下的所有文件名称
+        video_files = [f for f in os.listdir(video_folder_path) if os.path.isfile(os.path.join(outvideo_file_path, f))]
+        # 判断视频文件数量是否大于15
+        if len(video_files) >= 15:
+            print("存在历史视频，跳过下载")
+            return
+        else:
+            for link in filtered_links:
+                download_link(link, outvideo_file_path)
+            print("文件已下载至对应日期的文件夹中，即将进行视频合并，中途请勿退出...")
+            return
     except Exception as e:
         print("代码执行出现错误")
 
 
+#合并
+def meger_video(out_file_path, video_folder_path, get_date):
+    print("开始合并...")
+    # 构造每日文件夹路径
+    folder_path = video_folder_path
+    video_out_file = out_file_path
+    # 搜索指定文件夹下的所有 .mp4 文件并按名称排序
+    files = glob.glob(os.path.join(folder_path, "*.mp4"))
+    files.sort(key=lambda x: int(x.split("-")[-1].split(".")[0]))
+
+    if len(files) < 2:
+        if len(files) == 0:
+            print("无视频文件！")
+        else:
+            print("文件夹内的视频文件数量不足2个，无法进行合并。")
+            # 获取文件名
+            filename = os.path.basename(files[0])
+            # 构造目标路径
+            target_path = os.path.join(os.getcwd(), filename)
+            # 移动文件
+            shutil.move(files[0], target_path)
+            print(f"文件移动完成！目标路径：{target_path}")
+    else:
+        # 创建一个空的 VideoClip 列表
+        video_clips = []
+
+        try:
+            # 逐个加载视频文件，并添加到 VideoClip 列表中
+            for file in files:
+                video = mp.VideoFileClip(file)
+                video_clips.append(video)
+
+            # 使用 concatenate_videoclips() 函数合并视频
+            final_video = mp.concatenate_videoclips(video_clips)
+
+            # 输出合并后的视频文件路径
+            output_path = os.path.join(video_out_file, f"{get_date}.mp4")
+
+            # 保存合并后的视频文件
+            final_video.write_videofile(output_path, codec='libx264')
+
+            print(f"视频文件合并完成！保存路径：{output_path}")
+
+            # 删除需要合并的视频文件和video-link
+            for file in files:
+                os.remove(file)
+            os.remove(out_file_path+"/video-link")
+        except Exception as e:
+            print(f"视频文件合并失败：{e}")
 
 #写入需要的日期
 def errodate_write():
@@ -169,7 +228,7 @@ if __name__ == "__main__":
 
                 get_date = left_part
 
-                print(get_date)
+                print(f"《{get_date}》")
 
                 # 拆分日期字符串
                 year, month, day = get_date.split("-")
@@ -217,8 +276,13 @@ if __name__ == "__main__":
                                 #过滤
                                 get_video_link(out_file_path)
                                 print("正在进行视频下载...")
+                                #构建一手待合并视频目录
+                                video_folder_path = (out_file_path + "/dvideo")
                                 #下载
-                                download_video(out_file_path)
+                                download_video(out_file_path, video_folder_path)
+                                #合并
+                                meger_video(out_file_path, video_folder_path, get_date)
+
                             else:
                                 print(text2)
                                 errodate_write()
