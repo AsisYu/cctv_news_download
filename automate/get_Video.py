@@ -2,13 +2,9 @@ import re
 import os
 import sys
 import requests
-import datetime
-import logging
-import subprocess
 import calendar
 import glob
 import shutil
-import datetime
 import moviepy.editor as mp
 
 tmp_dir = 'tmp'
