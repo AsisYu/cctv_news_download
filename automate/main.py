@@ -1,7 +1,10 @@
 from hashlib import md5
 import os
 import re
+import sys
 import time
+import shutil
+import subprocess
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from selenium.webdriver.support.ui import WebDriverWait
@@ -14,14 +17,24 @@ import calendar
 text = "开始自动获取到getHttpVideoInfo.do?此过程不会进行下载合并!"
 text2 = "获取结束!"
 
-def get_all_days(year， month):
+def delete_tmp():
+    # 获取当前工作目录
+    current_dir = os.getcwd()
+    # 拼接要删除的目录路径
+    tmp_dir = os.path.join(current_dir, 'tmp')
+    # 判断目录是否存在
+    if os.path.exists(tmp_dir):
+        # 删除目录
+        shutil.rmtree(tmp_dir)
+
+def get_all_days(year, month):
     # 获取指定月份的天数
-    num_days = calendar.monthrange(year， month)[1]
+    num_days = calendar.monthrange(year, month)[1]
     # 存储每一天的日期
     dates = []
     # 遍历每一天，将其存储在列表中
     for day in range(1, num_days + 1):
-        dates.append((year， month, day))
+        dates.append((year, month, day))
     return dates
 
 def get_uid_and_vdnAdStaticCheck(url):
@@ -37,7 +50,7 @@ def get_uid_and_vdnAdStaticCheck(url):
     retry_count = 0
     while retry_count < max_retries:
         try:
-            WebDriverWait(driver， 20).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+            WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
             # 如果成功找到元素，则继续执行后续代码
             break
         except TimeoutException:
@@ -67,7 +80,7 @@ def get_cctv_pids_and_links(url):
     # 发送请求，获取页面内容
     browser.get(url)
     # 等待 class 为 "jvedio" 的 div 元素出现
-    wait = WebDriverWait(browser， 20)
+    wait = WebDriverWait(browser, 20)
     max_attempts = 3
     attempts = 0
     while attempts < max_attempts:
@@ -95,11 +108,15 @@ def get_cctv_pids_and_links(url):
             link = jvedio.find('a')['lanmu1']
             link_list.append(link)
     return {"pid_list": pid_list, "link_list": link_list}
+
 if __name__ == "__main__":
+    delete_tmp()
     print(text)
     # 用户输入年份和月份
     year = int(input("请输入你想下载的年份："))
     month = int(input("请输入你想下载的月份："))
+    # 使用 zfill() 方法补齐前导0，确保月份为两位数形式
+    formatted_month = str(month).zfill(2)
 
     # 创建 tmp 文件夹
     os.makedirs('tmp', exist_ok=True)
@@ -110,7 +127,7 @@ if __name__ == "__main__":
 
     # 存储输入日期
     year_str = str(year)
-    month_str = str(month)
+    month_str = str(formatted_month)
     with open(date_file, 'a') as f:
         f.write(year_str+"-"+month_str+ '\n')
 
@@ -132,20 +149,27 @@ if __name__ == "__main__":
         pids_and_links = get_cctv_pids_and_links(url)
         print(pids_and_links)
         # 获得uid_and_vdnAdStaticCheck
-        uid_and_vdnAdStaticCheck = get_uid_and_vdnAdStaticCheck(pids_and_links["link_list"][0])
-        print(uid_and_vdnAdStaticCheck)
+        if pids_and_links["link_list"] and len(pids_and_links["link_list"]) > 0:
+            uid_and_vdnAdStaticCheck = get_uid_and_vdnAdStaticCheck(pids_and_links["link_list"][0])
+            print(uid_and_vdnAdStaticCheck)
+            for pid in pids_and_links["pid_list"]:
+                timestamp = str(int(datetime.now().timestamp()))[:10]
+                md5_p = md5(
+                    (timestamp + "2049" + uid_and_vdnAdStaticCheck["vdnAdStaticCheck"] + uid_and_vdnAdStaticCheck[
+                        "uid"]).encode('utf-8'))
+                md5_p = md5_p.hexdigest().upper()
+                video_link = "https://" + "vdn.apps.cntv.cn/api/getHttpVideoInfo.do?" + "pid=" + pid + \
+                             "&client=flash&im=0&tsp=" + timestamp + \
+                             "&vn=2049&vc=" + md5_p + "&uid=" + uid_and_vdnAdStaticCheck["uid"] + "&wlan="
+                print(video_link)
 
-        for pid in pids_and_links["pid_list"]:
-            timestamp = str(int(datetime.now().timestamp()))[:10]
-            md5_p = md5((timestamp + "2049" + uid_and_vdnAdStaticCheck["vdnAdStaticCheck"] +uid_and_vdnAdStaticCheck["uid"]).encode('utf-8'))
-            md5_p = md5_p.hexdigest().upper()
-            video_link = "https://"+"vdn.apps.cntv.cn/api/getHttpVideoInfo.do?"+"pid=" + pid + \
-                "&client=flash&im=0&tsp="+timestamp + \
-                "&vn=2049&vc=" + md5_p + "&uid=" + uid_and_vdnAdStaticCheck["uid"] + "&wlan="
-            print(video_link)
-
-            # 写入 video_link 到 get_link 文件
-            with open(link_file, 'a') as f:
-                f.write(year_str+"-"+month_str+"-"+day_str+":"+video_link + '\n')
-                break   # 只写入第一行内容
-    print(text2)
+                # 写入 video_link 到 get_link 文件
+                with open(link_file, 'a') as f:
+                    f.write(year_str + "-" + month_str + "-" + day_str + ":" + video_link + '\n')
+                    break  # 只写入第一行内容
+        else:
+            print(text2)
+            subprocess.run(["python", "get_Video.py"])
+            sys.exit()
+print(text2)
+subprocess.run(["python", "get_Video.py"])
