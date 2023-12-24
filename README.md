@@ -108,5 +108,9 @@ pip install moviepy
 
 合并完成的文件会对应在该日的文件夹目录下
 ![2](https://github.com/AsisYu/cctv_news_download/assets/68932312/88a1273e-1e7d-4d92-8d30-e0a34ab72a48)
-在下载的时候代码会自动分辨是不是新闻联播，不是的会在根目录创建文件保存不是新闻联播的对应日期，请自行分辨手动下载
+在下载的时候代码会自动分辨是不是新闻联播，不是的会停顿让你选择是否继续
+![1](https://github.com/AsisYu/cctv_news_download/assets/68932312/624a542f-2029-4848-9254-f13390b011d1)
+
+然后在根目录创建文件保存不是新闻联播的对应日期，请自行分辨手动下载
+![2](https://github.com/AsisYu/cctv_news_download/assets/68932312/b3b80c7f-a3d1-4ee4-af08-d8067f8b315b)
 
