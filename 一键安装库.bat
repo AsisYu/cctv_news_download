@@ -5,7 +5,7 @@ REM 设置控制台编码为UTF-8
 chcp 65001
 
 REM 定义需要安装的Python包
-set "PACKAGES=selenium beautifulsoup4 regex requests glob2 moviepy"
+set "PACKAGES=hashlib selenium beautifulsoup4 regex requests glob shutil moviepy"
 
 REM 循环遍历所有包并尝试安装，使用阿里云的镜像源
 for %%p in (%PACKAGES%) do (
