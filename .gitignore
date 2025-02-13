@@ -1,0 +1,23 @@
+# 虚拟环境
+venv/
+env/
+.env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 项目特定
+uploads/
+merged/
+*.mp4
+*.ts
+
+# IDE
+.vscode/
+.idea/
+
+# 系统
+.DS_Store
+Thumbs.db 

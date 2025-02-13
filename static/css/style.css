@@ -1,0 +1,708 @@
+/* 全局样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* 侧边栏样式 */
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
+    background: #2c3e50;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar.active + #content {
+    margin-left: 0;
+    width: 100%;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #243444;
+    text-align: center;
+}
+
+#sidebar .sidebar-header i {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul li a {
+    padding: 12px 20px;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    transition: all 0.3s;
+    border-left: 4px solid transparent;
+}
+
+#sidebar ul li a:hover {
+    background: #34495e;
+    color: #fff;
+    border-left-color: #3498db;
+}
+
+#sidebar ul li.active > a {
+    background: #34495e;
+    color: #fff;
+    border-left-color: #3498db;
+}
+
+.sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background: #243444;
+}
+
+/* 内容区域样式 */
+#content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    transition: all 0.3s;
+    background-color: #f8f9fa;
+}
+
+/* 上传区域样式 */
+.upload-area {
+    border: 2px dashed #dee2e6;
+    border-radius: 8px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.upload-area:hover {
+    border-color: #3498db;
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.upload-area.drag-over {
+    border-color: #3498db;
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+/* 文件列表样式 */
+.file-item {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.file-item i {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.file-item .remove-file {
+    color: #e74c3c;
+    cursor: pointer;
+}
+
+/* 进度条样式 */
+.progress {
+    height: 25px;
+    background-color: #f8f9fa;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+    transition: width 0.5s ease-in-out;
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+}
+
+/* 按钮样式 */
+.btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: #3498db;
+    border-color: #3498db;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-success {
+    background: #2ecc71;
+    border-color: #2ecc71;
+}
+
+.btn-success:hover {
+    background: #27ae60;
+    border-color: #27ae60;
+}
+
+/* 卡片样式 */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* 导航栏样式 */
+.navbar {
+    padding: 12px 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        margin-left: 0;
+    }
+}
+
+/* 动画效果 */
+.animate-fade {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 图标样式 */
+.bi {
+    margin-right: 10px;
+}
+
+/* 进度条样式 */
+#statusText {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#downloadSection {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 导航栏样式 */
+#sidebarCollapse {
+    background: #3498db;
+    border-color: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+#sidebarCollapse:hover {
+    background: #2980b9;
+    border-color: #2980b9;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(52, 152, 219, 0.3);
+}
+
+#sidebarCollapse:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* 功能区域样式 */
+.function-section {
+    padding: 20px;
+}
+
+/* 在现有样式后添加 */
+.delete-task {
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+.delete-task:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.list-group-item {
+    transition: all 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: rgba(0,0,0,0.02);
+}
+
+.list-group-item .progress {
+    width: 100px;
+    height: 6px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.task-controls {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.list-group-item:hover .task-controls {
+    display: block;
+}
+
+/* 任务列表样式优化 */
+.task-item {
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    padding: 1rem;
+}
+
+.task-item:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* 任务操作按钮样式 */
+.task-actions {
+    display: flex;
+    align-items: center;
+}
+
+.task-actions .btn {
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.25rem;
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+.task-actions .btn:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.task-actions .btn i {
+    margin-right: 0;
+}
+
+/* 预留区域样式 */
+.task-extra {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* 进度条样式优化 */
+.task-item .progress {
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.task-item .progress-bar {
+    transition: width 0.5s ease-in-out;
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+}
+
+.task-item .progress-bar.bg-danger {
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+}
+
+.task-item .progress-bar.progress-bar-striped {
+    background-size: 1rem 1rem;
+}
+
+/* 任务详情表格样式 */
+#taskDetailTable {
+    margin-bottom: 0;
+}
+
+#taskDetailTable th {
+    font-weight: 600;
+    color: #495057;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+}
+
+#taskDetailTable td {
+    vertical-align: middle;
+    padding: 0.5rem;
+}
+
+#taskDetailTable .badge {
+    font-weight: normal;
+    padding: 0.35em 0.65em;
+}
+
+/* 状态标签样式 */
+.badge.bg-success {
+    background-color: #28a745 !important;
+}
+
+.badge.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+.badge.bg-warning {
+    background-color: #ffc107 !important;
+    color: #000;
+}
+
+/* 表格行悬停效果 */
+#taskDetailTable tbody tr {
+    transition: background-color 0.2s;
+}
+
+#taskDetailTable tbody tr:hover {
+    background-color: rgba(0,0,0,0.02);
+}
+
+/* 任务详情模态框按钮样式 */
+.delete-task-detail {
+    transition: all 0.2s;
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.delete-task-detail:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(220, 53, 69, 0.2);
+}
+
+.delete-task-detail:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.delete-task-detail i {
+    margin-right: 5px;
+}
+
+/* 任务详情标题区域样式 */
+.task-info .border-bottom {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 重试按钮样式 */
+.retry-segment {
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+.retry-segment:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.retry-segment i {
+    font-size: 0.875rem;
+}
+
+/* 状态单元格样式 */
+#taskDetailTable td:nth-child(2) {
+    white-space: nowrap;
+}
+
+/* 重试合并按钮样式 */
+#retryMergeBtn {
+    transition: all 0.2s;
+}
+
+#retryMergeBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#retryMergeBtn i {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 只在悬停时旋转图标 */
+#retryMergeBtn:not(:hover) i {
+    animation: none;
+}
+
+/* 优化滚动条 */
+#sidebar {
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.2) transparent;
+}
+
+#sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+#sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 3px;
+}
+
+/* 下载按钮样式 */
+.task-item .btn-success {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+    transition: all 0.2s;
+}
+
+.task-item .btn-success:hover {
+    background-color: #27ae60;
+    border-color: #27ae60;
+    transform: translateY(-1px);
+}
+
+/* 进度信息样式 */
+.task-item .progress + div {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+/* 任务高亮动画 */
+@keyframes taskHighlight {
+    0% {
+        background-color: rgba(52, 152, 219, 0.1);
+        transform: translateY(-2px);
+    }
+    50% {
+        background-color: rgba(52, 152, 219, 0.2);
+        transform: translateY(0);
+    }
+    100% {
+        background-color: transparent;
+        transform: translateY(0);
+    }
+}
+
+.task-highlight {
+    animation: taskHighlight 2s ease-out;
+}
+
+/* 平滑滚动 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 任务列表容器 */
+#taskList {
+    scroll-margin-top: 100px; /* 滚动时保持顶部间距 */
+}
+
+/* 优化滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* 进度条和状态显示样式 */
+.progress-info {
+    margin-top: 0.75rem;
+    padding: 0.5rem;
+    background: rgba(0,0,0,0.02);
+    border-radius: 6px;
+}
+
+.progress-status {
+    font-size: 0.875rem;
+}
+
+.status-text {
+    color: #6c757d;
+}
+
+.status-text i {
+    margin-right: 4px;
+}
+
+.progress-text {
+    font-weight: 500;
+    color: #495057;
+}
+
+.progress {
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+    transition: width 0.5s ease-in-out;
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+}
+
+.progress-bar.bg-danger {
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+}
+
+.progress-bar.progress-bar-striped {
+    background-size: 1rem 1rem;
+}
+
+.segments-info, .speed-info {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.segments-info i, .speed-info i {
+    font-size: 0.875rem;
+    margin-right: 3px;
+    opacity: 0.7;
+}
+
+/* 状态图标动画 */
+@keyframes downloading {
+    from { transform: translateY(0); }
+    to { transform: translateY(-2px); }
+}
+
+.status-text i.bi-arrow-down-circle {
+    color: #3498db;
+    animation: downloading 0.6s ease-in-out infinite alternate;
+}
+
+.status-text i.bi-check-circle {
+    color: #2ecc71;
+}
+
+.status-text i.bi-exclamation-circle {
+    color: #e74c3c;
+}
+
+.status-text i.bi-clock {
+    color: #95a5a6;
+}
+
+/* 视频预览相关样式 */
+#videoPreviewPlayer {
+    max-height: 70vh;
+    width: 100%;
+    display: block;
+}
+
+.preview-video:hover {
+    color: #0d6efd;
+    transform: translateY(-1px);
+}
+
+.btn-success:hover {
+    transform: translateY(-1px);
+}
+
+/* 视频预览模态框样式 */
+#videoPreviewModal .modal-body {
+    background: #000;
+    padding: 0;
+}
+
+/* 任务详情模态框样式 */
+#taskDetailModal .modal-body {
+    background: #fff;
+    padding: 1.5rem;
+}
+
+/* 通用模态框样式 */
+.modal-content {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 1rem 1.5rem;
+}
+
+/* 视频播放器样式 */
+#videoPreviewPlayer {
+    max-height: 70vh;
+    background: #000;
+}
+
+/* 预览按钮样式 */
+.preview-video:hover {
+    color: #0d6efd;
+    transform: translateY(-1px);
+}
+
+.btn-success:hover {
+    transform: translateY(-1px);
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+} 
