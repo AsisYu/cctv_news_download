@@ -16,94 +16,67 @@ logger = logging.getLogger(__name__)
 class TSMerger:
     def __init__(self, output_dir='merged'):
         self.output_dir = output_dir
-        os.makedirs(output_dir, exist_ok=True)
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
 
-    def merge_files(self, input_files, output_filename=None, progress_callback=None):
+    def merge_files(self, file_paths, task_id):
         """
         合并TS文件
-        :param input_files: TS文件路径列表
-        :param output_filename: 输出文件名(可选)
-        :param progress_callback: 进度回调函数(可选)
-        :return: dict, 包含合并结果信息
+        
+        Args:
+            file_paths: TS文件路径列表
+            task_id: 任务ID
         """
-        try:
-            if not input_files:
-                return {
-                    'success': False,
-                    'message': '没有输入文件'
-                }
-
-            # 如果没有指定输出文件名，使用时间戳生成
-            if not output_filename:
-                timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-                output_filename = f'merged_{timestamp}.mp4'
-
-            # 确保输出文件路径
-            output_file = os.path.join(self.output_dir, output_filename)
+        # 为每个任务创建独立的工作目录
+        work_dir = os.path.join(self.output_dir, task_id)
+        if not os.path.exists(work_dir):
+            os.makedirs(work_dir)
             
-            # 创建临时文件列表
-            list_file = os.path.join(self.output_dir, 'filelist.txt')
-            with open(list_file, 'w', encoding='utf-8') as f:
-                for file_path in input_files:
-                    # 使用绝对路径
-                    abs_path = os.path.abspath(file_path).replace('\\', '/')
-                    f.write(f"file '{abs_path}'\n")
-
-            # FFmpeg命令
-            command = [
-                'ffmpeg',
-                '-f', 'concat',
+        # 使用任务特定的文件列表
+        filelist_path = os.path.join(work_dir, 'filelist.txt')
+        
+        try:
+            # 创建文件列表
+            with open(filelist_path, 'w', encoding='utf-8') as f:
+                for file_path in file_paths:
+                    f.write(f"file '{file_path}'\n")
+            
+            # 设置输出文件路径
+            output_file = os.path.join(self.output_dir, f'{task_id}.mp4')
+            
+            # 执行ffmpeg命令
+            cmd = [
+                'ffmpeg', '-f', 'concat',
                 '-safe', '0',
-                '-i', list_file,
+                '-i', filelist_path,
                 '-c', 'copy',
+                '-y',  # 覆盖已存在的文件
                 output_file
             ]
-
-            # 执行合并
-            logger.info(f"开始合并 {len(input_files)} 个文件到 {output_file}")
-            process = subprocess.Popen(
-                command,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
-                universal_newlines=True
-            )
             
-            # 等待完成并处理进度回调
-            while True:
-                output = process.stdout.readline()
-                if output == '' and process.poll() is not None:
-                    break
-                if output and progress_callback:
-                    progress_callback(output.strip())
-            
+            process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             stdout, stderr = process.communicate()
-
-            # 清理临时文件
-            if os.path.exists(list_file):
-                os.remove(list_file)
-
-            # 检查结果
-            if process.returncode == 0 and os.path.exists(output_file):
-                logger.info(f"合并完成: {output_file}")
-                return {
-                    'success': True,
-                    'output_file': output_file,
-                    'message': '合并成功'
-                }
-            else:
-                error_msg = stderr
-                logger.error(f"合并失败: {error_msg}")
-                return {
-                    'success': False,
-                    'message': f'合并失败: {error_msg}'
-                }
-
+            
+            if process.returncode != 0:
+                raise Exception(f"FFmpeg 错误: {stderr.decode()}")
+                
+            return output_file
+            
         except Exception as e:
-            logger.error(f"合并出错: {str(e)}")
-            return {
-                'success': False,
-                'message': f'合并出错: {str(e)}'
-            }
+            raise Exception(f"合并失败: {str(e)}")
+            
+        finally:
+            # 清理临时文件
+            if os.path.exists(filelist_path):
+                try:
+                    os.remove(filelist_path)
+                except:
+                    pass
+            # 清理工作目录
+            try:
+                os.rmdir(work_dir)
+            except:
+                pass
 
     def validate_ts_file(self, file_path):
         """

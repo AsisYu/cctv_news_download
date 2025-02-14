@@ -1,1 +1,3863 @@
-{}
+{
+  "2856401d-f7fd-4875-af65-4f17b5c23fed": {
+    "pid": "15b5cb84b7e84353b173fb1a0bcba6c4",
+    "progress": 95,
+    "status": "合并完成！",
+    "total_segments": 181,
+    "task_dir": "uploads\\2856401d-f7fd-4875-af65-4f17b5c23fed",
+    "created_at": "2025-02-14T11:54:47.663110",
+    "start_time": 1739505287.6631107,
+    "title": "《新闻联播》 20250213 1900",
+    "m3u8_url": "https://hls.cntv.cdn20.com/asp/hls/main/0303000a/3/default/15b5cb84b7e84353b173fb1a0bcba6c4/main.m3u8?maxbr=2048",
+    "segments_info": {
+      "1": {
+        "status": "completed",
+        "size": 625100,
+        "duration": 1198,
+        "start_time": 1739505289.5973306,
+        "completed_at": 1739505290.797474
+      },
+      "2": {
+        "status": "completed",
+        "size": 588440,
+        "duration": 17238,
+        "start_time": 1739505289.5973306,
+        "completed_at": 1739505306.8379812
+      },
+      "3": {
+        "status": "completed",
+        "size": 606676,
+        "duration": 1269,
+        "start_time": 1739505289.597843,
+        "completed_at": 1739505290.870246
+      },
+      "4": {
+        "status": "completed",
+        "size": 605548,
+        "duration": 1274,
+        "start_time": 1739505289.598363,
+        "completed_at": 1739505290.8755853
+      },
+      "5": {
+        "status": "completed",
+        "size": 607240,
+        "duration": 1126,
+        "start_time": 1739505289.5988739,
+        "completed_at": 1739505290.7276711
+      },
+      "6": {
+        "status": "completed",
+        "size": 606488,
+        "duration": 1166,
+        "start_time": 1739505289.5998976,
+        "completed_at": 1739505290.7684362
+      },
+      "7": {
+        "status": "completed",
+        "size": 604984,
+        "duration": 1171,
+        "start_time": 1739505289.600926,
+        "completed_at": 1739505290.7746155
+      },
+      "8": {
+        "status": "completed",
+        "size": 606864,
+        "duration": 1257,
+        "start_time": 1739505289.6019497,
+        "completed_at": 1739505290.8604946
+      },
+      "9": {
+        "status": "completed",
+        "size": 605736,
+        "duration": 877,
+        "start_time": 1739505289.602461,
+        "completed_at": 1739505291.6060338
+      },
+      "10": {
+        "status": "completed",
+        "size": 620024,
+        "duration": 909,
+        "start_time": 1739505289.6029646,
+        "completed_at": 1739505291.6799204
+      },
+      "11": {
+        "status": "completed",
+        "size": 598216,
+        "duration": 985,
+        "start_time": 1739505289.6029646,
+        "completed_at": 1739505291.763751
+      },
+      "12": {
+        "status": "completed",
+        "size": 626604,
+        "duration": 969,
+        "start_time": 1739505289.6029646,
+        "completed_at": 1739505291.769586
+      },
+      "13": {
+        "status": "completed",
+        "size": 593328,
+        "duration": 893,
+        "start_time": 1739505289.6029646,
+        "completed_at": 1739505291.7560306
+      },
+      "14": {
+        "status": "completed",
+        "size": 612504,
+        "duration": 905,
+        "start_time": 1739505289.6029646,
+        "completed_at": 1739505291.7764165
+      },
+      "15": {
+        "status": "completed",
+        "size": 590696,
+        "duration": 862,
+        "start_time": 1739505289.6029646,
+        "completed_at": 1739505291.740321
+      },
+      "16": {
+        "status": "completed",
+        "size": 605548,
+        "duration": 861,
+        "start_time": 1739505289.6029646,
+        "completed_at": 1739505292.4683156
+      },
+      "17": {
+        "status": "completed",
+        "size": 626416,
+        "duration": 939,
+        "start_time": 1739505289.6029646,
+        "completed_at": 1739505292.6218271
+      },
+      "18": {
+        "status": "completed",
+        "size": 586748,
+        "duration": 17015,
+        "start_time": 1739505289.6029646,
+        "completed_at": 1739505308.7576954
+      },
+      "19": {
+        "status": "completed",
+        "size": 609496,
+        "duration": 945,
+        "start_time": 1739505289.6029646,
+        "completed_at": 1739505292.702622
+      },
+      "20": {
+        "status": "completed",
+        "size": 608932,
+        "duration": 931,
+        "start_time": 1739505289.6029646,
+        "completed_at": 1739505292.6962397
+      },
+      "21": {
+        "status": "completed",
+        "size": 610812,
+        "duration": 899,
+        "start_time": 1739505289.6029646,
+        "completed_at": 1739505292.6694572
+      },
+      "22": {
+        "status": "completed",
+        "size": 601036,
+        "duration": 902,
+        "start_time": 1739505289.6029646,
+        "completed_at": 1739505292.6792853
+      },
+      "23": {
+        "status": "completed",
+        "size": 609308,
+        "duration": 720,
+        "start_time": 1739505289.6029646,
+        "completed_at": 1739505293.1902163
+      },
+      "24": {
+        "status": "completed",
+        "size": 601788,
+        "duration": 16862,
+        "start_time": 1739505289.6029646,
+        "completed_at": 1739505309.4852526
+      },
+      "25": {
+        "status": "completed",
+        "size": 607052,
+        "duration": 857,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505293.5281935
+      },
+      "26": {
+        "status": "completed",
+        "size": 606676,
+        "duration": 852,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505293.533703
+      },
+      "27": {
+        "status": "completed",
+        "size": 606676,
+        "duration": 844,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505293.5431843
+      },
+      "28": {
+        "status": "completed",
+        "size": 606864,
+        "duration": 1095,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505293.798943
+      },
+      "29": {
+        "status": "completed",
+        "size": 614384,
+        "duration": 712,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505293.9040122
+      },
+      "30": {
+        "status": "completed",
+        "size": 611752,
+        "duration": 814,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505294.3449304
+      },
+      "31": {
+        "status": "completed",
+        "size": 591824,
+        "duration": 803,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505294.3382587
+      },
+      "32": {
+        "status": "completed",
+        "size": 606112,
+        "duration": 776,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505294.3221068
+      },
+      "33": {
+        "status": "completed",
+        "size": 615324,
+        "duration": 723,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505294.5233839
+      },
+      "34": {
+        "status": "completed",
+        "size": 601036,
+        "duration": 687,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505294.5932045
+      },
+      "35": {
+        "status": "completed",
+        "size": 612128,
+        "duration": 820,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505295.14361
+      },
+      "36": {
+        "status": "completed",
+        "size": 605924,
+        "duration": 791,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505295.1301408
+      },
+      "37": {
+        "status": "completed",
+        "size": 619836,
+        "duration": 863,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505295.2099562
+      },
+      "38": {
+        "status": "completed",
+        "size": 595208,
+        "duration": 778,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505295.3026454
+      },
+      "39": {
+        "status": "completed",
+        "size": 600660,
+        "duration": 827,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505295.4212568
+      },
+      "40": {
+        "status": "completed",
+        "size": 605924,
+        "duration": 1802,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505296.9338179
+      },
+      "41": {
+        "status": "completed",
+        "size": 605172,
+        "duration": 1824,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505296.969774
+      },
+      "42": {
+        "status": "completed",
+        "size": 611752,
+        "duration": 1815,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505297.026241
+      },
+      "43": {
+        "status": "completed",
+        "size": 611376,
+        "duration": 919,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505296.2234173
+      },
+      "44": {
+        "status": "completed",
+        "size": 602728,
+        "duration": 809,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505296.2322037
+      },
+      "45": {
+        "status": "completed",
+        "size": 600096,
+        "duration": 788,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505297.0135891
+      },
+      "46": {
+        "status": "completed",
+        "size": 612128,
+        "duration": 818,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505297.0526547
+      },
+      "47": {
+        "status": "completed",
+        "size": 613444,
+        "duration": 876,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505297.813291
+      },
+      "48": {
+        "status": "completed",
+        "size": 606864,
+        "duration": 851,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505297.8256896
+      },
+      "49": {
+        "status": "completed",
+        "size": 595020,
+        "duration": 835,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505297.8505547
+      },
+      "50": {
+        "status": "completed",
+        "size": 601224,
+        "duration": 870,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505297.9072962
+      },
+      "51": {
+        "status": "completed",
+        "size": 604420,
+        "duration": 820,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505297.875781
+      },
+      "52": {
+        "status": "completed",
+        "size": 610248,
+        "duration": 1011,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505298.826504
+      },
+      "53": {
+        "status": "completed",
+        "size": 604796,
+        "duration": 976,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505298.8010068
+      },
+      "54": {
+        "status": "completed",
+        "size": 606676,
+        "duration": 990,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505298.8430474
+      },
+      "55": {
+        "status": "completed",
+        "size": 614948,
+        "duration": 978,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505298.8564234
+      },
+      "56": {
+        "status": "completed",
+        "size": 611752,
+        "duration": 995,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505298.8977582
+      },
+      "57": {
+        "status": "completed",
+        "size": 604796,
+        "duration": 1275,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505300.0795054
+      },
+      "58": {
+        "status": "completed",
+        "size": 599532,
+        "duration": 1059,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505299.8986008
+      },
+      "59": {
+        "status": "completed",
+        "size": 604044,
+        "duration": 1033,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505299.8783085
+      },
+      "60": {
+        "status": "completed",
+        "size": 604232,
+        "duration": 1040,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505299.909604
+      },
+      "61": {
+        "status": "completed",
+        "size": 610624,
+        "duration": 2496,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505301.4324434
+      },
+      "62": {
+        "status": "completed",
+        "size": 604984,
+        "duration": 1511,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505301.4120936
+      },
+      "63": {
+        "status": "completed",
+        "size": 613444,
+        "duration": 1502,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505301.3959475
+      },
+      "64": {
+        "status": "completed",
+        "size": 599532,
+        "duration": 1490,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505301.4224706
+      },
+      "65": {
+        "status": "completed",
+        "size": 608744,
+        "duration": 1318,
+        "start_time": 1739505289.6030946,
+        "completed_at": 1739505301.4432752
+      },
+      "66": {
+        "status": "completed",
+        "size": 604984,
+        "duration": 1164,
+        "start_time": 1739505289.603598,
+        "completed_at": 1739505302.560228
+      },
+      "67": {
+        "status": "completed",
+        "size": 603856,
+        "duration": 1168,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505302.5945559
+      },
+      "68": {
+        "status": "completed",
+        "size": 606112,
+        "duration": 1165,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505302.5781844
+      },
+      "69": {
+        "status": "completed",
+        "size": 613068,
+        "duration": 1200,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505302.623764
+      },
+      "70": {
+        "status": "completed",
+        "size": 610060,
+        "duration": 1191,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505302.6099474
+      },
+      "71": {
+        "status": "completed",
+        "size": 597840,
+        "duration": 1110,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505303.671869
+      },
+      "72": {
+        "status": "completed",
+        "size": 604796,
+        "duration": 1128,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505303.69225
+      },
+      "73": {
+        "status": "completed",
+        "size": 611000,
+        "duration": 17016,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505319.5807238
+      },
+      "74": {
+        "status": "completed",
+        "size": 624912,
+        "duration": 1096,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505303.7058806
+      },
+      "75": {
+        "status": "completed",
+        "size": 583176,
+        "duration": 1108,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505303.7219372
+      },
+      "76": {
+        "status": "completed",
+        "size": 625100,
+        "duration": 1109,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505304.841791
+      },
+      "77": {
+        "status": "completed",
+        "size": 593328,
+        "duration": 1114,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505304.8570375
+      },
+      "78": {
+        "status": "completed",
+        "size": 607052,
+        "duration": 1080,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505304.7790284
+      },
+      "79": {
+        "status": "completed",
+        "size": 609684,
+        "duration": 1075,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505304.8197806
+      },
+      "80": {
+        "status": "completed",
+        "size": 602916,
+        "duration": 1057,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505305.8698628
+      },
+      "81": {
+        "status": "completed",
+        "size": 621716,
+        "duration": 1034,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505305.8413393
+      },
+      "82": {
+        "status": "completed",
+        "size": 589944,
+        "duration": 1023,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505305.819072
+      },
+      "83": {
+        "status": "completed",
+        "size": 626792,
+        "duration": 1071,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505305.886083
+      },
+      "84": {
+        "status": "completed",
+        "size": 582236,
+        "duration": 1062,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505306.8833473
+      },
+      "85": {
+        "status": "completed",
+        "size": 607616,
+        "duration": 970,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505306.7933927
+      },
+      "86": {
+        "status": "completed",
+        "size": 605924,
+        "duration": 2274,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505308.1157086
+      },
+      "87": {
+        "status": "completed",
+        "size": 621152,
+        "duration": 1016,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505306.9019961
+      },
+      "88": {
+        "status": "completed",
+        "size": 600472,
+        "duration": 1021,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505307.8183162
+      },
+      "89": {
+        "status": "completed",
+        "size": 600284,
+        "duration": 1048,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505307.8863726
+      },
+      "90": {
+        "status": "completed",
+        "size": 619648,
+        "duration": 1037,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505307.9233162
+      },
+      "91": {
+        "status": "completed",
+        "size": 605360,
+        "duration": 1037,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505307.9404995
+      },
+      "92": {
+        "status": "completed",
+        "size": 610436,
+        "duration": 1146,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505308.964112
+      },
+      "93": {
+        "status": "completed",
+        "size": 621904,
+        "duration": 31310,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505339.1972365
+      },
+      "94": {
+        "status": "completed",
+        "size": 576032,
+        "duration": 1066,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505308.991051
+      },
+      "95": {
+        "status": "completed",
+        "size": 605736,
+        "duration": 1130,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505309.072649
+      },
+      "96": {
+        "status": "completed",
+        "size": 611376,
+        "duration": 1036,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505309.1531222
+      },
+      "97": {
+        "status": "completed",
+        "size": 615888,
+        "duration": 1124,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505309.8840127
+      },
+      "98": {
+        "status": "completed",
+        "size": 598028,
+        "duration": 1104,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505310.0697274
+      },
+      "99": {
+        "status": "completed",
+        "size": 601976,
+        "duration": 1095,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505310.0870996
+      },
+      "100": {
+        "status": "completed",
+        "size": 605548,
+        "duration": 1054,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505310.1287837
+      },
+      "101": {
+        "status": "completed",
+        "size": 607240,
+        "duration": 1080,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505310.2355068
+      },
+      "102": {
+        "status": "completed",
+        "size": 619084,
+        "duration": 1156,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505310.6442049
+      },
+      "103": {
+        "status": "completed",
+        "size": 602728,
+        "duration": 1190,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505311.0786197
+      },
+      "104": {
+        "status": "completed",
+        "size": 625288,
+        "duration": 1132,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505311.2076957
+      },
+      "105": {
+        "status": "completed",
+        "size": 582236,
+        "duration": 1138,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505311.227892
+      },
+      "106": {
+        "status": "completed",
+        "size": 638072,
+        "duration": 1126,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505311.2565598
+      },
+      "107": {
+        "status": "completed",
+        "size": 582048,
+        "duration": 1056,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505311.294355
+      },
+      "108": {
+        "status": "completed",
+        "size": 612692,
+        "duration": 1169,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505311.8161097
+      },
+      "109": {
+        "status": "completed",
+        "size": 602728,
+        "duration": 1113,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505312.1926405
+      },
+      "110": {
+        "status": "completed",
+        "size": 603668,
+        "duration": 1344,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505312.5521162
+      },
+      "111": {
+        "status": "completed",
+        "size": 599532,
+        "duration": 1080,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505312.322546
+      },
+      "112": {
+        "status": "completed",
+        "size": 621340,
+        "duration": 1049,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505312.3078375
+      },
+      "113": {
+        "status": "completed",
+        "size": 588440,
+        "duration": 1078,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505312.3769143
+      },
+      "114": {
+        "status": "completed",
+        "size": 606488,
+        "duration": 1231,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505313.049439
+      },
+      "115": {
+        "status": "completed",
+        "size": 615324,
+        "duration": 17023,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505329.221636
+      },
+      "116": {
+        "status": "completed",
+        "size": 605360,
+        "duration": 1065,
+        "start_time": 1739505289.6036105,
+        "completed_at": 1739505313.3753088
+      },
+      "117": {
+        "status": "completed",
+        "size": 622844,
+        "duration": 1077,
+        "start_time": 1739505289.6041143,
+        "completed_at": 1739505313.3932846
+      },
+      "118": {
+        "status": "completed",
+        "size": 610060,
+        "duration": 1092,
+        "start_time": 1739505289.6041143,
+        "completed_at": 1739505313.4701483
+      },
+      "119": {
+        "status": "completed",
+        "size": 598028,
+        "duration": 1054,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505313.607543
+      },
+      "120": {
+        "status": "completed",
+        "size": 587688,
+        "duration": 1021,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505314.072701
+      },
+      "121": {
+        "status": "completed",
+        "size": 615888,
+        "duration": 1082,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505314.4638946
+      },
+      "122": {
+        "status": "completed",
+        "size": 597088,
+        "duration": 1055,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505314.4490244
+      },
+      "123": {
+        "status": "completed",
+        "size": 617392,
+        "duration": 1105,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505314.5760386
+      },
+      "124": {
+        "status": "completed",
+        "size": 614760,
+        "duration": 1115,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505314.7299976
+      },
+      "125": {
+        "status": "completed",
+        "size": 591260,
+        "duration": 1070,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505315.14422
+      },
+      "126": {
+        "status": "completed",
+        "size": 622656,
+        "duration": 1060,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505315.5120807
+      },
+      "127": {
+        "status": "completed",
+        "size": 588628,
+        "duration": 1056,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505315.5352528
+      },
+      "128": {
+        "status": "completed",
+        "size": 625476,
+        "duration": 1042,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505315.6199048
+      },
+      "129": {
+        "status": "completed",
+        "size": 589380,
+        "duration": 1068,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505315.798524
+      },
+      "130": {
+        "status": "completed",
+        "size": 616076,
+        "duration": 1181,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505316.3271997
+      },
+      "131": {
+        "status": "completed",
+        "size": 616828,
+        "duration": 1738,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505317.2533772
+      },
+      "132": {
+        "status": "completed",
+        "size": 584492,
+        "duration": 1097,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505316.6181884
+      },
+      "133": {
+        "status": "completed",
+        "size": 606864,
+        "duration": 1078,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505316.6995332
+      },
+      "134": {
+        "status": "completed",
+        "size": 621904,
+        "duration": 1037,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505316.836263
+      },
+      "135": {
+        "status": "completed",
+        "size": 591260,
+        "duration": 1347,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505317.6764808
+      },
+      "136": {
+        "status": "completed",
+        "size": 607428,
+        "duration": 1034,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505317.654479
+      },
+      "137": {
+        "status": "completed",
+        "size": 607804,
+        "duration": 1139,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505317.841802
+      },
+      "138": {
+        "status": "completed",
+        "size": 607428,
+        "duration": 1070,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505317.908705
+      },
+      "139": {
+        "status": "completed",
+        "size": 607240,
+        "duration": 954,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505318.2146914
+      },
+      "140": {
+        "status": "completed",
+        "size": 609120,
+        "duration": 1081,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505318.7429206
+      },
+      "141": {
+        "status": "completed",
+        "size": 602540,
+        "duration": 1145,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505318.823902
+      },
+      "142": {
+        "status": "completed",
+        "size": 605548,
+        "duration": 1337,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505319.1815271
+      },
+      "143": {
+        "status": "completed",
+        "size": 621340,
+        "duration": 1042,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505318.9536858
+      },
+      "144": {
+        "status": "completed",
+        "size": 595960,
+        "duration": 1116,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505319.3284826
+      },
+      "145": {
+        "status": "completed",
+        "size": 611376,
+        "duration": 1094,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505319.8341975
+      },
+      "146": {
+        "status": "completed",
+        "size": 611564,
+        "duration": 1074,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505319.9001799
+      },
+      "147": {
+        "status": "completed",
+        "size": 594832,
+        "duration": 1109,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505320.0651374
+      },
+      "148": {
+        "status": "completed",
+        "size": 606488,
+        "duration": 1202,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505320.3846617
+      },
+      "149": {
+        "status": "completed",
+        "size": 608744,
+        "duration": 1162,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505320.4917474
+      },
+      "150": {
+        "status": "completed",
+        "size": 608180,
+        "duration": 1151,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505320.7338681
+      },
+      "151": {
+        "status": "completed",
+        "size": 603856,
+        "duration": 1062,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505320.9010267
+      },
+      "152": {
+        "status": "completed",
+        "size": 607052,
+        "duration": 1095,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505320.996589
+      },
+      "153": {
+        "status": "completed",
+        "size": 632432,
+        "duration": 1047,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505321.1169782
+      },
+      "154": {
+        "status": "completed",
+        "size": 584680,
+        "duration": 1209,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505321.595604
+      },
+      "155": {
+        "status": "completed",
+        "size": 601412,
+        "duration": 1200,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505321.6948342
+      },
+      "156": {
+        "status": "completed",
+        "size": 626416,
+        "duration": 1245,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505321.9814703
+      },
+      "157": {
+        "status": "completed",
+        "size": 594268,
+        "duration": 1198,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505322.1034527
+      },
+      "158": {
+        "status": "completed",
+        "size": 603668,
+        "duration": 1115,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505322.1499825
+      },
+      "159": {
+        "status": "completed",
+        "size": 603104,
+        "duration": 1079,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505322.1948514
+      },
+      "160": {
+        "status": "completed",
+        "size": 612504,
+        "duration": 1156,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505322.7537024
+      },
+      "161": {
+        "status": "completed",
+        "size": 606300,
+        "duration": 1255,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505322.951506
+      },
+      "162": {
+        "status": "completed",
+        "size": 602540,
+        "duration": 1192,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505323.1757064
+      },
+      "163": {
+        "status": "completed",
+        "size": 607616,
+        "duration": 1119,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505323.2224658
+      },
+      "164": {
+        "status": "completed",
+        "size": 616264,
+        "duration": 1150,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505323.2699213
+      },
+      "165": {
+        "status": "completed",
+        "size": 598028,
+        "duration": 1110,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505323.3077245
+      },
+      "166": {
+        "status": "completed",
+        "size": 607052,
+        "duration": 1228,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505323.985539
+      },
+      "167": {
+        "status": "completed",
+        "size": 608180,
+        "duration": 16943,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505339.896504
+      },
+      "168": {
+        "status": "completed",
+        "size": 637132,
+        "duration": 1130,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505324.3073986
+      },
+      "169": {
+        "status": "completed",
+        "size": 575468,
+        "duration": 1106,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505324.331872
+      },
+      "170": {
+        "status": "completed",
+        "size": 605360,
+        "duration": 1157,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505324.426998
+      },
+      "171": {
+        "status": "completed",
+        "size": 605548,
+        "duration": 1137,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505324.4527235
+      },
+      "172": {
+        "status": "completed",
+        "size": 618144,
+        "duration": 1083,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505325.071263
+      },
+      "173": {
+        "status": "completed",
+        "size": 598780,
+        "duration": 1072,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505325.3812847
+      },
+      "174": {
+        "status": "completed",
+        "size": 612316,
+        "duration": 1237,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505325.573347
+      },
+      "175": {
+        "status": "completed",
+        "size": 596524,
+        "duration": 1240,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505325.6686285
+      },
+      "176": {
+        "status": "completed",
+        "size": 606676,
+        "duration": 1090,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505325.5404365
+      },
+      "177": {
+        "status": "completed",
+        "size": 606488,
+        "duration": 965,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505326.0396328
+      },
+      "178": {
+        "status": "completed",
+        "size": 604420,
+        "duration": 979,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505326.3608503
+      },
+      "179": {
+        "status": "completed",
+        "size": 607428,
+        "duration": 1040,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505326.5905244
+      },
+      "180": {
+        "status": "completed",
+        "size": 614384,
+        "duration": 986,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505326.568731
+      },
+      "181": {
+        "status": "completed",
+        "size": 118064,
+        "duration": 880,
+        "start_time": 1739505289.6041312,
+        "completed_at": 1739505326.5513036
+      }
+    },
+    "completed_segments": 181,
+    "total_duration": 52256,
+    "end_time": 1739505339.9192863,
+    "merge_info": {
+      "progress": 100,
+      "status": "合并完成"
+    },
+    "output_file": "merged\\2856401d-f7fd-4875-af65-4f17b5c23fed.mp4"
+  },
+  "8f60a35d-9099-4ce7-a3d9-2bcd462afaae": {
+    "pid": "15b5cb84b7e84353b173fb1a0bcba6c4",
+    "progress": 95,
+    "status": "错误: 合并失败: 合并出错: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'merged\\\\filelist.txt'",
+    "total_segments": 181,
+    "task_dir": "uploads\\8f60a35d-9099-4ce7-a3d9-2bcd462afaae",
+    "created_at": "2025-02-14T11:54:55.539980",
+    "start_time": 1739505295.5399802,
+    "title": "《新闻联播》 20250213 1900",
+    "m3u8_url": "https://hls.cntv.cdn20.com/asp/hls/main/0303000a/3/default/15b5cb84b7e84353b173fb1a0bcba6c4/main.m3u8?maxbr=2048",
+    "segments_info": {
+      "1": {
+        "status": "completed",
+        "size": 625100,
+        "duration": 1064,
+        "start_time": 1739505297.4476752,
+        "completed_at": 1739505298.5146558
+      },
+      "2": {
+        "status": "completed",
+        "size": 588440,
+        "duration": 1089,
+        "start_time": 1739505297.448194,
+        "completed_at": 1739505298.5414405
+      },
+      "3": {
+        "status": "completed",
+        "size": 606676,
+        "duration": 1042,
+        "start_time": 1739505297.4487114,
+        "completed_at": 1739505298.4981906
+      },
+      "4": {
+        "status": "completed",
+        "size": 605548,
+        "duration": 1115,
+        "start_time": 1739505297.4492264,
+        "completed_at": 1739505298.5691805
+      },
+      "5": {
+        "status": "completed",
+        "size": 607240,
+        "duration": 1035,
+        "start_time": 1739505297.4497302,
+        "completed_at": 1739505298.4878745
+      },
+      "6": {
+        "status": "completed",
+        "size": 606488,
+        "duration": 1071,
+        "start_time": 1739505297.450729,
+        "completed_at": 1739505298.5337167
+      },
+      "7": {
+        "status": "completed",
+        "size": 604984,
+        "duration": 1070,
+        "start_time": 1739505297.4517264,
+        "completed_at": 1739505298.5246046
+      },
+      "8": {
+        "status": "completed",
+        "size": 606864,
+        "duration": 1103,
+        "start_time": 1739505297.4525666,
+        "completed_at": 1739505298.559136
+      },
+      "9": {
+        "status": "completed",
+        "size": 605736,
+        "duration": 1122,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505299.6109946
+      },
+      "10": {
+        "status": "completed",
+        "size": 620024,
+        "duration": 1161,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505299.6646867
+      },
+      "11": {
+        "status": "completed",
+        "size": 598216,
+        "duration": 1115,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505299.6324108
+      },
+      "12": {
+        "status": "completed",
+        "size": 626604,
+        "duration": 1071,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505299.5968254
+      },
+      "13": {
+        "status": "completed",
+        "size": 593328,
+        "duration": 1091,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505299.6209955
+      },
+      "14": {
+        "status": "completed",
+        "size": 612504,
+        "duration": 1036,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505299.5780516
+      },
+      "15": {
+        "status": "completed",
+        "size": 590696,
+        "duration": 1078,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505299.6561437
+      },
+      "16": {
+        "status": "completed",
+        "size": 605548,
+        "duration": 1064,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505299.6452677
+      },
+      "17": {
+        "status": "completed",
+        "size": 626416,
+        "duration": 1045,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505300.645969
+      },
+      "18": {
+        "status": "completed",
+        "size": 586748,
+        "duration": 1023,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505300.622972
+      },
+      "19": {
+        "status": "completed",
+        "size": 609496,
+        "duration": 1032,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505300.6601503
+      },
+      "20": {
+        "status": "completed",
+        "size": 608932,
+        "duration": 1091,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505300.7248883
+      },
+      "21": {
+        "status": "completed",
+        "size": 610812,
+        "duration": 1064,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505300.6974776
+      },
+      "22": {
+        "status": "completed",
+        "size": 601036,
+        "duration": 1106,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505300.7441652
+      },
+      "23": {
+        "status": "completed",
+        "size": 609308,
+        "duration": 1168,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505300.8090963
+      },
+      "24": {
+        "status": "completed",
+        "size": 601788,
+        "duration": 1115,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505300.7737775
+      },
+      "25": {
+        "status": "completed",
+        "size": 607052,
+        "duration": 1237,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505301.8608694
+      },
+      "26": {
+        "status": "completed",
+        "size": 606676,
+        "duration": 1275,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505301.9986658
+      },
+      "27": {
+        "status": "completed",
+        "size": 606676,
+        "duration": 1235,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505301.962276
+      },
+      "28": {
+        "status": "completed",
+        "size": 606864,
+        "duration": 1301,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505302.091931
+      },
+      "29": {
+        "status": "completed",
+        "size": 614384,
+        "duration": 1241,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505302.0503511
+      },
+      "30": {
+        "status": "completed",
+        "size": 611752,
+        "duration": 1121,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505301.9056902
+      },
+      "31": {
+        "status": "completed",
+        "size": 591824,
+        "duration": 1144,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505302.0258558
+      },
+      "32": {
+        "status": "completed",
+        "size": 606112,
+        "duration": 1716,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505302.5265515
+      },
+      "33": {
+        "status": "completed",
+        "size": 615324,
+        "duration": 1215,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505303.141899
+      },
+      "34": {
+        "status": "completed",
+        "size": 601036,
+        "duration": 1157,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505303.0256383
+      },
+      "35": {
+        "status": "completed",
+        "size": 612128,
+        "duration": 1149,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505303.0554733
+      },
+      "36": {
+        "status": "completed",
+        "size": 605924,
+        "duration": 1140,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505303.0903654
+      },
+      "37": {
+        "status": "completed",
+        "size": 619836,
+        "duration": 1129,
+        "start_time": 1739505297.4530942,
+        "completed_at": 1739505303.121489
+      },
+      "38": {
+        "status": "completed",
+        "size": 595208,
+        "duration": 1295,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505303.250405
+      },
+      "39": {
+        "status": "completed",
+        "size": 600660,
+        "duration": 1265,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505303.2706146
+      },
+      "40": {
+        "status": "completed",
+        "size": 605924,
+        "duration": 1124,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505303.653415
+      },
+      "41": {
+        "status": "completed",
+        "size": 605172,
+        "duration": 1108,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505304.136045
+      },
+      "42": {
+        "status": "completed",
+        "size": 611752,
+        "duration": 1210,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505304.250444
+      },
+      "43": {
+        "status": "completed",
+        "size": 611376,
+        "duration": 1115,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505304.1645162
+      },
+      "44": {
+        "status": "completed",
+        "size": 602728,
+        "duration": 1164,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505304.2210584
+      },
+      "45": {
+        "status": "completed",
+        "size": 600096,
+        "duration": 1190,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505304.2730699
+      },
+      "46": {
+        "status": "completed",
+        "size": 612128,
+        "duration": 1117,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505304.3691752
+      },
+      "47": {
+        "status": "completed",
+        "size": 613444,
+        "duration": 1112,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505304.3901203
+      },
+      "48": {
+        "status": "completed",
+        "size": 606864,
+        "duration": 1123,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505304.7807987
+      },
+      "49": {
+        "status": "completed",
+        "size": 595020,
+        "duration": 17386,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505321.523505
+      },
+      "50": {
+        "status": "completed",
+        "size": 601224,
+        "duration": 1105,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505305.271087
+      },
+      "51": {
+        "status": "completed",
+        "size": 604420,
+        "duration": 1112,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505305.334304
+      },
+      "52": {
+        "status": "completed",
+        "size": 610248,
+        "duration": 2380,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505306.631621
+      },
+      "53": {
+        "status": "completed",
+        "size": 604796,
+        "duration": 1159,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505305.431939
+      },
+      "54": {
+        "status": "completed",
+        "size": 606676,
+        "duration": 1131,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505305.5030007
+      },
+      "55": {
+        "status": "completed",
+        "size": 614948,
+        "duration": 1382,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505305.769671
+      },
+      "56": {
+        "status": "completed",
+        "size": 611752,
+        "duration": 1108,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505305.8902473
+      },
+      "57": {
+        "status": "completed",
+        "size": 604796,
+        "duration": 931,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505306.2036896
+      },
+      "58": {
+        "status": "completed",
+        "size": 599532,
+        "duration": 1135,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505306.470309
+      },
+      "59": {
+        "status": "completed",
+        "size": 604044,
+        "duration": 1024,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505306.4574516
+      },
+      "60": {
+        "status": "completed",
+        "size": 604232,
+        "duration": 1312,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505306.8172297
+      },
+      "61": {
+        "status": "completed",
+        "size": 610624,
+        "duration": 2026,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505307.7971919
+      },
+      "62": {
+        "status": "completed",
+        "size": 604984,
+        "duration": 1064,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505306.9555228
+      },
+      "63": {
+        "status": "completed",
+        "size": 613444,
+        "duration": 911,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505307.1211216
+      },
+      "64": {
+        "status": "completed",
+        "size": 599532,
+        "duration": 954,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505307.4139683
+      },
+      "65": {
+        "status": "completed",
+        "size": 608744,
+        "duration": 1043,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505307.5147538
+      },
+      "66": {
+        "status": "completed",
+        "size": 604984,
+        "duration": 1052,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505307.6866183
+      },
+      "67": {
+        "status": "completed",
+        "size": 603856,
+        "duration": 998,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505307.819333
+      },
+      "68": {
+        "status": "completed",
+        "size": 606112,
+        "duration": 1049,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505308.0068636
+      },
+      "69": {
+        "status": "completed",
+        "size": 613068,
+        "duration": 1047,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505308.1684015
+      },
+      "70": {
+        "status": "completed",
+        "size": 610060,
+        "duration": 957,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505308.3728516
+      },
+      "71": {
+        "status": "completed",
+        "size": 597840,
+        "duration": 1107,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505308.6248364
+      },
+      "72": {
+        "status": "completed",
+        "size": 604796,
+        "duration": 1157,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505308.850941
+      },
+      "73": {
+        "status": "completed",
+        "size": 611000,
+        "duration": 1119,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505308.9186666
+      },
+      "74": {
+        "status": "completed",
+        "size": 624912,
+        "duration": 1114,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505308.9353867
+      },
+      "75": {
+        "status": "completed",
+        "size": 583176,
+        "duration": 1122,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505309.1305263
+      },
+      "76": {
+        "status": "completed",
+        "size": 625100,
+        "duration": 1088,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505309.259658
+      },
+      "77": {
+        "status": "completed",
+        "size": 593328,
+        "duration": 1041,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505309.4163456
+      },
+      "78": {
+        "status": "completed",
+        "size": 607052,
+        "duration": 1087,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505309.7149608
+      },
+      "79": {
+        "status": "completed",
+        "size": 609684,
+        "duration": 1091,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505309.9391325
+      },
+      "80": {
+        "status": "completed",
+        "size": 602916,
+        "duration": 1033,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505309.9572241
+      },
+      "81": {
+        "status": "completed",
+        "size": 621716,
+        "duration": 1083,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505310.02081
+      },
+      "82": {
+        "status": "completed",
+        "size": 589944,
+        "duration": 1085,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505310.2175856
+      },
+      "83": {
+        "status": "completed",
+        "size": 626792,
+        "duration": 1111,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505310.3722901
+      },
+      "84": {
+        "status": "completed",
+        "size": 582236,
+        "duration": 1128,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505310.5469878
+      },
+      "85": {
+        "status": "completed",
+        "size": 607616,
+        "duration": 1118,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505310.8340068
+      },
+      "86": {
+        "status": "completed",
+        "size": 605924,
+        "duration": 1129,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505311.0709007
+      },
+      "87": {
+        "status": "completed",
+        "size": 621152,
+        "duration": 1153,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505311.109035
+      },
+      "88": {
+        "status": "completed",
+        "size": 600472,
+        "duration": 1173,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505311.1951609
+      },
+      "89": {
+        "status": "completed",
+        "size": 600284,
+        "duration": 1067,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505311.287778
+      },
+      "90": {
+        "status": "completed",
+        "size": 619648,
+        "duration": 1449,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505311.82356
+      },
+      "91": {
+        "status": "completed",
+        "size": 605360,
+        "duration": 1083,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505311.6346555
+      },
+      "92": {
+        "status": "completed",
+        "size": 610436,
+        "duration": 1380,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505312.2156868
+      },
+      "93": {
+        "status": "completed",
+        "size": 621904,
+        "duration": 2213,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505313.2859082
+      },
+      "94": {
+        "status": "completed",
+        "size": 576032,
+        "duration": 1378,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505312.4893732
+      },
+      "95": {
+        "status": "completed",
+        "size": 605736,
+        "duration": 1373,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505312.5703583
+      },
+      "96": {
+        "status": "completed",
+        "size": 611376,
+        "duration": 1086,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505312.37791
+      },
+      "97": {
+        "status": "completed",
+        "size": 615888,
+        "duration": 1125,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505312.761009
+      },
+      "98": {
+        "status": "completed",
+        "size": 598028,
+        "duration": 1052,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505312.8768728
+      },
+      "99": {
+        "status": "completed",
+        "size": 601976,
+        "duration": 1082,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505313.3045914
+      },
+      "100": {
+        "status": "completed",
+        "size": 605548,
+        "duration": 1090,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505313.4701483
+      },
+      "101": {
+        "status": "completed",
+        "size": 607240,
+        "duration": 1065,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505313.5569212
+      },
+      "102": {
+        "status": "completed",
+        "size": 619084,
+        "duration": 1098,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505313.6711764
+      },
+      "103": {
+        "status": "completed",
+        "size": 602728,
+        "duration": 1109,
+        "start_time": 1739505297.4536073,
+        "completed_at": 1739505313.8720827
+      },
+      "104": {
+        "status": "completed",
+        "size": 625288,
+        "duration": 1103,
+        "start_time": 1739505297.4541104,
+        "completed_at": 1739505313.9835021
+      },
+      "105": {
+        "status": "completed",
+        "size": 582236,
+        "duration": 1119,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505314.4073834
+      },
+      "106": {
+        "status": "completed",
+        "size": 638072,
+        "duration": 1085,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505314.388709
+      },
+      "107": {
+        "status": "completed",
+        "size": 582048,
+        "duration": 1075,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505314.5472562
+      },
+      "108": {
+        "status": "completed",
+        "size": 612692,
+        "duration": 1104,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505314.662358
+      },
+      "109": {
+        "status": "completed",
+        "size": 602728,
+        "duration": 1090,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505314.764034
+      },
+      "110": {
+        "status": "completed",
+        "size": 603668,
+        "duration": 1130,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505315.0033298
+      },
+      "111": {
+        "status": "completed",
+        "size": 599532,
+        "duration": 1079,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505315.0630968
+      },
+      "112": {
+        "status": "completed",
+        "size": 621340,
+        "duration": 1133,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505315.5282984
+      },
+      "113": {
+        "status": "completed",
+        "size": 588440,
+        "duration": 1074,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505315.482231
+      },
+      "114": {
+        "status": "completed",
+        "size": 606488,
+        "duration": 1037,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505315.5874548
+      },
+      "115": {
+        "status": "completed",
+        "size": 615324,
+        "duration": 1070,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505315.7347214
+      },
+      "116": {
+        "status": "completed",
+        "size": 605360,
+        "duration": 1088,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505315.8548985
+      },
+      "117": {
+        "status": "completed",
+        "size": 622844,
+        "duration": 1113,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505316.1191607
+      },
+      "118": {
+        "status": "completed",
+        "size": 610060,
+        "duration": 1057,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505316.1358318
+      },
+      "119": {
+        "status": "completed",
+        "size": 598028,
+        "duration": 1106,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505316.590526
+      },
+      "120": {
+        "status": "completed",
+        "size": 587688,
+        "duration": 1079,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505316.6043177
+      },
+      "121": {
+        "status": "completed",
+        "size": 615888,
+        "duration": 1092,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505316.6811845
+      },
+      "122": {
+        "status": "completed",
+        "size": 597088,
+        "duration": 1041,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505316.7783625
+      },
+      "123": {
+        "status": "completed",
+        "size": 617392,
+        "duration": 1189,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505317.0457895
+      },
+      "124": {
+        "status": "completed",
+        "size": 614760,
+        "duration": 1012,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505317.13327
+      },
+      "125": {
+        "status": "completed",
+        "size": 591260,
+        "duration": 1046,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505317.169889
+      },
+      "126": {
+        "status": "completed",
+        "size": 622656,
+        "duration": 1031,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505317.624008
+      },
+      "127": {
+        "status": "completed",
+        "size": 588628,
+        "duration": 1025,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505317.6412225
+      },
+      "128": {
+        "status": "completed",
+        "size": 625476,
+        "duration": 1011,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505317.6945984
+      },
+      "129": {
+        "status": "completed",
+        "size": 589380,
+        "duration": 1087,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505317.8672078
+      },
+      "130": {
+        "status": "completed",
+        "size": 616076,
+        "duration": 1146,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505318.2037282
+      },
+      "131": {
+        "status": "completed",
+        "size": 616828,
+        "duration": 1072,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505318.233182
+      },
+      "132": {
+        "status": "completed",
+        "size": 584492,
+        "duration": 1059,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505318.26297
+      },
+      "133": {
+        "status": "completed",
+        "size": 606864,
+        "duration": 1119,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505318.754824
+      },
+      "134": {
+        "status": "completed",
+        "size": 621904,
+        "duration": 1255,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505318.9000058
+      },
+      "135": {
+        "status": "completed",
+        "size": 591260,
+        "duration": 1183,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505318.8802233
+      },
+      "136": {
+        "status": "completed",
+        "size": 607428,
+        "duration": 1084,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505318.9549727
+      },
+      "137": {
+        "status": "completed",
+        "size": 607804,
+        "duration": 1096,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505319.2981982
+      },
+      "138": {
+        "status": "completed",
+        "size": 607428,
+        "duration": 1255,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505319.4647064
+      },
+      "139": {
+        "status": "completed",
+        "size": 607240,
+        "duration": 1203,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505319.440544
+      },
+      "140": {
+        "status": "completed",
+        "size": 609120,
+        "duration": 1130,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505319.880054
+      },
+      "141": {
+        "status": "completed",
+        "size": 602540,
+        "duration": 1159,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505320.044395
+      },
+      "142": {
+        "status": "completed",
+        "size": 605548,
+        "duration": 1091,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505319.98336
+      },
+      "143": {
+        "status": "completed",
+        "size": 621340,
+        "duration": 1068,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505320.0252516
+      },
+      "144": {
+        "status": "completed",
+        "size": 595960,
+        "duration": 1115,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505320.41105
+      },
+      "145": {
+        "status": "completed",
+        "size": 611376,
+        "duration": 1178,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505320.6206222
+      },
+      "146": {
+        "status": "completed",
+        "size": 611564,
+        "duration": 1135,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505320.601547
+      },
+      "147": {
+        "status": "completed",
+        "size": 594832,
+        "duration": 1071,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505320.9542809
+      },
+      "148": {
+        "status": "completed",
+        "size": 606488,
+        "duration": 1109,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505321.0944624
+      },
+      "149": {
+        "status": "completed",
+        "size": 608744,
+        "duration": 1015,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505321.0423937
+      },
+      "150": {
+        "status": "completed",
+        "size": 608180,
+        "duration": 1107,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505321.1519423
+      },
+      "151": {
+        "status": "completed",
+        "size": 603856,
+        "duration": 1196,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505321.6147542
+      },
+      "152": {
+        "status": "completed",
+        "size": 607052,
+        "duration": 1226,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505321.8306615
+      },
+      "153": {
+        "status": "completed",
+        "size": 632432,
+        "duration": 1214,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505321.8483174
+      },
+      "154": {
+        "status": "completed",
+        "size": 584680,
+        "duration": 1175,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505322.1317217
+      },
+      "155": {
+        "status": "completed",
+        "size": 601412,
+        "duration": 1125,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505322.1733289
+      },
+      "156": {
+        "status": "completed",
+        "size": 626416,
+        "duration": 1310,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505322.4115236
+      },
+      "157": {
+        "status": "completed",
+        "size": 594268,
+        "duration": 1295,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505322.4510329
+      },
+      "158": {
+        "status": "completed",
+        "size": 603668,
+        "duration": 1334,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505322.859232
+      },
+      "159": {
+        "status": "completed",
+        "size": 603104,
+        "duration": 1263,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505322.8761144
+      },
+      "160": {
+        "status": "completed",
+        "size": 612504,
+        "duration": 17060,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505338.8924677
+      },
+      "161": {
+        "status": "completed",
+        "size": 606300,
+        "duration": 2203,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505324.0426419
+      },
+      "162": {
+        "status": "completed",
+        "size": 602540,
+        "duration": 1119,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505323.2540257
+      },
+      "163": {
+        "status": "completed",
+        "size": 607616,
+        "duration": 1152,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505323.3255947
+      },
+      "164": {
+        "status": "completed",
+        "size": 616264,
+        "duration": 1048,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505323.4571996
+      },
+      "165": {
+        "status": "completed",
+        "size": 598028,
+        "duration": 1310,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505323.763293
+      },
+      "166": {
+        "status": "completed",
+        "size": 607052,
+        "duration": 1105,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505323.9675648
+      },
+      "167": {
+        "status": "completed",
+        "size": 608180,
+        "duration": 1090,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505323.9819486
+      },
+      "168": {
+        "status": "completed",
+        "size": 637132,
+        "duration": 1111,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505324.3664393
+      },
+      "169": {
+        "status": "completed",
+        "size": 575468,
+        "duration": 1081,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505324.4080222
+      },
+      "170": {
+        "status": "completed",
+        "size": 605360,
+        "duration": 1046,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505324.5120823
+      },
+      "171": {
+        "status": "completed",
+        "size": 605548,
+        "duration": 1137,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505324.9084032
+      },
+      "172": {
+        "status": "completed",
+        "size": 618144,
+        "duration": 1115,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505325.087782
+      },
+      "173": {
+        "status": "completed",
+        "size": 598780,
+        "duration": 1080,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505325.0508125
+      },
+      "174": {
+        "status": "completed",
+        "size": 612316,
+        "duration": 1117,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505325.1612067
+      },
+      "175": {
+        "status": "completed",
+        "size": 596524,
+        "duration": 1232,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505325.6195343
+      },
+      "176": {
+        "status": "completed",
+        "size": 606676,
+        "duration": 1167,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505325.5859008
+      },
+      "177": {
+        "status": "completed",
+        "size": 606488,
+        "duration": 1049,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505325.5593846
+      },
+      "178": {
+        "status": "completed",
+        "size": 604420,
+        "duration": 968,
+        "start_time": 1739505297.454119,
+        "completed_at": 1739505325.8751767
+      },
+      "179": {
+        "status": "completed",
+        "size": 607428,
+        "duration": 874,
+        "start_time": 1739505297.4546218,
+        "completed_at": 1739505325.926507
+      },
+      "180": {
+        "status": "completed",
+        "size": 614384,
+        "duration": 935,
+        "start_time": 1739505297.4546218,
+        "completed_at": 1739505326.0256941
+      },
+      "181": {
+        "status": "completed",
+        "size": 118064,
+        "duration": 849,
+        "start_time": 1739505297.4546335,
+        "completed_at": 1739505326.0106037
+      }
+    },
+    "completed_segments": 181,
+    "total_duration": 43373,
+    "end_time": 1739505338.9129913,
+    "error": true,
+    "can_retry": true
+  },
+  "c1dc2886-98bb-4a83-b15b-9fc9a372fea9": {
+    "pid": "15b5cb84b7e84353b173fb1a0bcba6c4",
+    "progress": 95,
+    "status": "合并完成！",
+    "total_segments": 181,
+    "task_dir": "uploads\\c1dc2886-98bb-4a83-b15b-9fc9a372fea9",
+    "created_at": "2025-02-14T11:54:58.253589",
+    "start_time": 1739505298.25359,
+    "title": "《新闻联播》 20250213 1900",
+    "m3u8_url": "https://hls.cntv.cdn20.com/asp/hls/main/0303000a/3/default/15b5cb84b7e84353b173fb1a0bcba6c4/main.m3u8?maxbr=2048",
+    "segments_info": {
+      "1": {
+        "status": "completed",
+        "size": 625100,
+        "duration": 1323,
+        "start_time": 1739505300.5763602,
+        "completed_at": 1739505301.9986658
+      },
+      "2": {
+        "status": "completed",
+        "size": 588440,
+        "duration": 1375,
+        "start_time": 1739505300.5768702,
+        "completed_at": 1739505302.0503511
+      },
+      "3": {
+        "status": "completed",
+        "size": 606676,
+        "duration": 1298,
+        "start_time": 1739505300.5773854,
+        "completed_at": 1739505301.9405637
+      },
+      "4": {
+        "status": "completed",
+        "size": 605548,
+        "duration": 1229,
+        "start_time": 1739505300.578432,
+        "completed_at": 1739505301.8115315
+      },
+      "5": {
+        "status": "completed",
+        "size": 607240,
+        "duration": 1234,
+        "start_time": 1739505300.57945,
+        "completed_at": 1739505301.8287861
+      },
+      "6": {
+        "status": "completed",
+        "size": 606488,
+        "duration": 1235,
+        "start_time": 1739505300.583083,
+        "completed_at": 1739505301.9041874
+      },
+      "7": {
+        "status": "completed",
+        "size": 604984,
+        "duration": 1350,
+        "start_time": 1739505300.5841258,
+        "completed_at": 1739505302.026853
+      },
+      "8": {
+        "status": "completed",
+        "size": 606864,
+        "duration": 17297,
+        "start_time": 1739505300.5846477,
+        "completed_at": 1739505317.88562
+      },
+      "9": {
+        "status": "completed",
+        "size": 605736,
+        "duration": 2448,
+        "start_time": 1739505300.5867105,
+        "completed_at": 1739505304.2654927
+      },
+      "10": {
+        "status": "completed",
+        "size": 620024,
+        "duration": 1144,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505302.966762
+      },
+      "11": {
+        "status": "completed",
+        "size": 598216,
+        "duration": 1171,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505302.9970186
+      },
+      "12": {
+        "status": "completed",
+        "size": 626604,
+        "duration": 1185,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505303.0763297
+      },
+      "13": {
+        "status": "completed",
+        "size": 593328,
+        "duration": 1133,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505303.0410693
+      },
+      "14": {
+        "status": "completed",
+        "size": 612504,
+        "duration": 1147,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505303.10688
+      },
+      "15": {
+        "status": "completed",
+        "size": 590696,
+        "duration": 1149,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505303.141899
+      },
+      "16": {
+        "status": "completed",
+        "size": 605548,
+        "duration": 1124,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505304.0926378
+      },
+      "17": {
+        "status": "completed",
+        "size": 626416,
+        "duration": 1146,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505304.1469295
+      },
+      "18": {
+        "status": "completed",
+        "size": 586748,
+        "duration": 1694,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505304.7362173
+      },
+      "19": {
+        "status": "completed",
+        "size": 609496,
+        "duration": 1112,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505304.185435
+      },
+      "20": {
+        "status": "completed",
+        "size": 608932,
+        "duration": 1093,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505304.199281
+      },
+      "21": {
+        "status": "completed",
+        "size": 610812,
+        "duration": 1666,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505304.7807987
+      },
+      "22": {
+        "status": "completed",
+        "size": 601036,
+        "duration": 1093,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505305.1877213
+      },
+      "23": {
+        "status": "completed",
+        "size": 609308,
+        "duration": 1174,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505305.3202624
+      },
+      "24": {
+        "status": "completed",
+        "size": 601788,
+        "duration": 1176,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505305.3664587
+      },
+      "25": {
+        "status": "completed",
+        "size": 607052,
+        "duration": 1164,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505305.349945
+      },
+      "26": {
+        "status": "completed",
+        "size": 606676,
+        "duration": 1103,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505305.380421
+      },
+      "27": {
+        "status": "completed",
+        "size": 606676,
+        "duration": 1106,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505305.8467937
+      },
+      "28": {
+        "status": "completed",
+        "size": 606864,
+        "duration": 1019,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505305.7969093
+      },
+      "29": {
+        "status": "completed",
+        "size": 614384,
+        "duration": 988,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505306.17808
+      },
+      "30": {
+        "status": "completed",
+        "size": 611752,
+        "duration": 1152,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505306.4775918
+      },
+      "31": {
+        "status": "completed",
+        "size": 591824,
+        "duration": 1303,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505306.6563497
+      },
+      "32": {
+        "status": "completed",
+        "size": 606112,
+        "duration": 1169,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505306.5341527
+      },
+      "33": {
+        "status": "completed",
+        "size": 615324,
+        "duration": 1040,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505306.4110718
+      },
+      "34": {
+        "status": "completed",
+        "size": 601036,
+        "duration": 1340,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505307.1391892
+      },
+      "35": {
+        "status": "completed",
+        "size": 612128,
+        "duration": 1345,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505307.1923566
+      },
+      "36": {
+        "status": "completed",
+        "size": 605924,
+        "duration": 922,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505307.1029677
+      },
+      "37": {
+        "status": "completed",
+        "size": 619836,
+        "duration": 969,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505307.3814845
+      },
+      "38": {
+        "status": "completed",
+        "size": 595208,
+        "duration": 968,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505307.44544
+      },
+      "39": {
+        "status": "completed",
+        "size": 600660,
+        "duration": 981,
+        "start_time": 1739505300.586722,
+        "completed_at": 1739505307.5175276
+      },
+      "40": {
+        "status": "completed",
+        "size": 605924,
+        "duration": 1058,
+        "start_time": 1739505300.5872297,
+        "completed_at": 1739505307.7175293
+      },
+      "41": {
+        "status": "completed",
+        "size": 605172,
+        "duration": 1066,
+        "start_time": 1739505300.5872297,
+        "completed_at": 1739505308.1746202
+      },
+      "42": {
+        "status": "completed",
+        "size": 611752,
+        "duration": 1063,
+        "start_time": 1739505300.5872297,
+        "completed_at": 1739505308.2043047
+      },
+      "43": {
+        "status": "completed",
+        "size": 611376,
+        "duration": 1027,
+        "start_time": 1739505300.5872297,
+        "completed_at": 1739505308.2214208
+      },
+      "44": {
+        "status": "completed",
+        "size": 602728,
+        "duration": 1006,
+        "start_time": 1739505300.5872297,
+        "completed_at": 1739505308.3896801
+      },
+      "45": {
+        "status": "completed",
+        "size": 600096,
+        "duration": 1010,
+        "start_time": 1739505300.5872297,
+        "completed_at": 1739505308.45734
+      },
+      "46": {
+        "status": "completed",
+        "size": 612128,
+        "duration": 1104,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505308.6226366
+      },
+      "47": {
+        "status": "completed",
+        "size": 613444,
+        "duration": 1116,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505308.835367
+      },
+      "48": {
+        "status": "completed",
+        "size": 606864,
+        "duration": 1358,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505309.5331953
+      },
+      "49": {
+        "status": "completed",
+        "size": 595020,
+        "duration": 1108,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505309.3125901
+      },
+      "50": {
+        "status": "completed",
+        "size": 601224,
+        "duration": 1065,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505309.2874472
+      },
+      "51": {
+        "status": "completed",
+        "size": 604420,
+        "duration": 1045,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505309.43655
+      },
+      "52": {
+        "status": "completed",
+        "size": 610248,
+        "duration": 1081,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505309.5512714
+      },
+      "53": {
+        "status": "completed",
+        "size": 604796,
+        "duration": 1152,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505309.7765982
+      },
+      "54": {
+        "status": "completed",
+        "size": 606676,
+        "duration": 1140,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505309.9776447
+      },
+      "55": {
+        "status": "completed",
+        "size": 614948,
+        "duration": 1061,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505310.351218
+      },
+      "56": {
+        "status": "completed",
+        "size": 611752,
+        "duration": 1048,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505310.3780775
+      },
+      "57": {
+        "status": "completed",
+        "size": 604796,
+        "duration": 1088,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505310.5260723
+      },
+      "58": {
+        "status": "completed",
+        "size": 599532,
+        "duration": 1044,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505310.5784667
+      },
+      "59": {
+        "status": "completed",
+        "size": 604044,
+        "duration": 1072,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505310.6167667
+      },
+      "60": {
+        "status": "completed",
+        "size": 604232,
+        "duration": 1164,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505310.9430847
+      },
+      "61": {
+        "status": "completed",
+        "size": 610624,
+        "duration": 1071,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505311.0506332
+      },
+      "62": {
+        "status": "completed",
+        "size": 604984,
+        "duration": 1056,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505311.408674
+      },
+      "63": {
+        "status": "completed",
+        "size": 613444,
+        "duration": 1135,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505311.4997816
+      },
+      "64": {
+        "status": "completed",
+        "size": 599532,
+        "duration": 1095,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505311.6240814
+      },
+      "65": {
+        "status": "completed",
+        "size": 608744,
+        "duration": 1091,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505311.6724792
+      },
+      "66": {
+        "status": "completed",
+        "size": 604984,
+        "duration": 1109,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505311.7269297
+      },
+      "67": {
+        "status": "completed",
+        "size": 603856,
+        "duration": 1167,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505312.112465
+      },
+      "68": {
+        "status": "completed",
+        "size": 606112,
+        "duration": 1180,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505312.234191
+      },
+      "69": {
+        "status": "completed",
+        "size": 613068,
+        "duration": 1109,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505312.5194206
+      },
+      "70": {
+        "status": "completed",
+        "size": 610060,
+        "duration": 1155,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505312.6571538
+      },
+      "71": {
+        "status": "completed",
+        "size": 597840,
+        "duration": 1065,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505312.6900997
+      },
+      "72": {
+        "status": "completed",
+        "size": 604796,
+        "duration": 1109,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505312.7836795
+      },
+      "73": {
+        "status": "completed",
+        "size": 611000,
+        "duration": 1317,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505313.047379
+      },
+      "74": {
+        "status": "completed",
+        "size": 624912,
+        "duration": 1079,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505313.1936502
+      },
+      "75": {
+        "status": "completed",
+        "size": 583176,
+        "duration": 1029,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505313.2654047
+      },
+      "76": {
+        "status": "completed",
+        "size": 625100,
+        "duration": 1064,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505313.586686
+      },
+      "77": {
+        "status": "completed",
+        "size": 593328,
+        "duration": 1085,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505313.745311
+      },
+      "78": {
+        "status": "completed",
+        "size": 607052,
+        "duration": 1117,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505313.8102837
+      },
+      "79": {
+        "status": "completed",
+        "size": 609684,
+        "duration": 1105,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505313.8916597
+      },
+      "80": {
+        "status": "completed",
+        "size": 602916,
+        "duration": 1041,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505314.0899355
+      },
+      "81": {
+        "status": "completed",
+        "size": 621716,
+        "duration": 1118,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505314.3137753
+      },
+      "82": {
+        "status": "completed",
+        "size": 589944,
+        "duration": 1095,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505314.3627508
+      },
+      "83": {
+        "status": "completed",
+        "size": 626792,
+        "duration": 1134,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505314.7224588
+      },
+      "84": {
+        "status": "completed",
+        "size": 582236,
+        "duration": 1106,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505314.8527172
+      },
+      "85": {
+        "status": "completed",
+        "size": 607616,
+        "duration": 1087,
+        "start_time": 1739505300.5872989,
+        "completed_at": 1739505314.899047
+      },
+      "86": {
+        "status": "completed",
+        "size": 605924,
+        "duration": 1299,
+        "start_time": 1739505300.5878067,
+        "completed_at": 1739505315.1933198
+      },
+      "87": {
+        "status": "completed",
+        "size": 621152,
+        "duration": 1072,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505315.1646557
+      },
+      "88": {
+        "status": "completed",
+        "size": 600472,
+        "duration": 1329,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505315.6444302
+      },
+      "89": {
+        "status": "completed",
+        "size": 600284,
+        "duration": 1033,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505315.3980339
+      },
+      "90": {
+        "status": "completed",
+        "size": 619648,
+        "duration": 1066,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505315.789551
+      },
+      "91": {
+        "status": "completed",
+        "size": 605360,
+        "duration": 1068,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505315.9220345
+      },
+      "92": {
+        "status": "completed",
+        "size": 610436,
+        "duration": 1188,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505316.0885673
+      },
+      "93": {
+        "status": "completed",
+        "size": 621904,
+        "duration": 1202,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505316.369395
+      },
+      "94": {
+        "status": "completed",
+        "size": 576032,
+        "duration": 1154,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505316.3495035
+      },
+      "95": {
+        "status": "completed",
+        "size": 605736,
+        "duration": 1099,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505316.499381
+      },
+      "96": {
+        "status": "completed",
+        "size": 611376,
+        "duration": 1085,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505316.7320592
+      },
+      "97": {
+        "status": "completed",
+        "size": 615888,
+        "duration": 1065,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505316.8588552
+      },
+      "98": {
+        "status": "completed",
+        "size": 598028,
+        "duration": 1187,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505317.1117525
+      },
+      "99": {
+        "status": "completed",
+        "size": 601976,
+        "duration": 31162,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505347.2516515
+      },
+      "100": {
+        "status": "completed",
+        "size": 605548,
+        "duration": 1214,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505317.565859
+      },
+      "101": {
+        "status": "completed",
+        "size": 607240,
+        "duration": 1203,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505317.5814588
+      },
+      "102": {
+        "status": "completed",
+        "size": 619084,
+        "duration": 1107,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505317.6085372
+      },
+      "103": {
+        "status": "completed",
+        "size": 602728,
+        "duration": 1071,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505317.8054988
+      },
+      "104": {
+        "status": "completed",
+        "size": 625288,
+        "duration": 1237,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505318.0959232
+      },
+      "105": {
+        "status": "completed",
+        "size": 582236,
+        "duration": 1071,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505318.1842039
+      },
+      "106": {
+        "status": "completed",
+        "size": 638072,
+        "duration": 1134,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505318.7052422
+      },
+      "107": {
+        "status": "completed",
+        "size": 582048,
+        "duration": 1075,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505318.6524005
+      },
+      "108": {
+        "status": "completed",
+        "size": 612692,
+        "duration": 1093,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505318.7341714
+      },
+      "109": {
+        "status": "completed",
+        "size": 602728,
+        "duration": 1093,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505318.9000058
+      },
+      "110": {
+        "status": "completed",
+        "size": 603668,
+        "duration": 1044,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505318.932639
+      },
+      "111": {
+        "status": "completed",
+        "size": 599532,
+        "duration": 1191,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505319.2897654
+      },
+      "112": {
+        "status": "completed",
+        "size": 621340,
+        "duration": 1153,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505319.3446443
+      },
+      "113": {
+        "status": "completed",
+        "size": 588440,
+        "duration": 1090,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505319.743645
+      },
+      "114": {
+        "status": "completed",
+        "size": 606488,
+        "duration": 1074,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505319.7789507
+      },
+      "115": {
+        "status": "completed",
+        "size": 615324,
+        "duration": 1144,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505319.8556843
+      },
+      "116": {
+        "status": "completed",
+        "size": 605360,
+        "duration": 1055,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505319.956641
+      },
+      "117": {
+        "status": "completed",
+        "size": 622844,
+        "duration": 1068,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505320.003688
+      },
+      "118": {
+        "status": "completed",
+        "size": 610060,
+        "duration": 1146,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505320.438224
+      },
+      "119": {
+        "status": "completed",
+        "size": 598028,
+        "duration": 1214,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505320.557656
+      },
+      "120": {
+        "status": "completed",
+        "size": 587688,
+        "duration": 1123,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505320.8680391
+      },
+      "121": {
+        "status": "completed",
+        "size": 615888,
+        "duration": 1107,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505320.8888574
+      },
+      "122": {
+        "status": "completed",
+        "size": 597088,
+        "duration": 1113,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505320.9709249
+      },
+      "123": {
+        "status": "completed",
+        "size": 617392,
+        "duration": 1106,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505321.0656722
+      },
+      "124": {
+        "status": "completed",
+        "size": 614760,
+        "duration": 1084,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505321.0898952
+      },
+      "125": {
+        "status": "completed",
+        "size": 591260,
+        "duration": 1177,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505321.6202476
+      },
+      "126": {
+        "status": "completed",
+        "size": 622656,
+        "duration": 1225,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505321.7859185
+      },
+      "127": {
+        "status": "completed",
+        "size": 588628,
+        "duration": 1215,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505322.0860426
+      },
+      "128": {
+        "status": "completed",
+        "size": 625476,
+        "duration": 1150,
+        "start_time": 1739505300.5878103,
+        "completed_at": 1739505322.0429564
+      },
+      "129": {
+        "status": "completed",
+        "size": 589380,
+        "duration": 1094,
+        "start_time": 1739505300.5883176,
+        "completed_at": 1739505322.064947
+      },
+      "130": {
+        "status": "completed",
+        "size": 616076,
+        "duration": 1306,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505322.372644
+      },
+      "131": {
+        "status": "completed",
+        "size": 616828,
+        "duration": 1300,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505322.392451
+      },
+      "132": {
+        "status": "completed",
+        "size": 584492,
+        "duration": 1157,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505322.7768528
+      },
+      "133": {
+        "status": "completed",
+        "size": 606864,
+        "duration": 17609,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505339.3979294
+      },
+      "134": {
+        "status": "completed",
+        "size": 621904,
+        "duration": 1165,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505323.2178385
+      },
+      "135": {
+        "status": "completed",
+        "size": 591260,
+        "duration": 1130,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505323.1972456
+      },
+      "136": {
+        "status": "completed",
+        "size": 607428,
+        "duration": 1174,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505323.263999
+      },
+      "137": {
+        "status": "completed",
+        "size": 607804,
+        "duration": 1022,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505323.3970366
+      },
+      "138": {
+        "status": "completed",
+        "size": 607428,
+        "duration": 1023,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505323.4166422
+      },
+      "139": {
+        "status": "completed",
+        "size": 607240,
+        "duration": 1004,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505323.7835329
+      },
+      "140": {
+        "status": "completed",
+        "size": 609120,
+        "duration": 1088,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505324.2868872
+      },
+      "141": {
+        "status": "completed",
+        "size": 602540,
+        "duration": 1112,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505324.3274348
+      },
+      "142": {
+        "status": "completed",
+        "size": 605548,
+        "duration": 1123,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505324.3862004
+      },
+      "143": {
+        "status": "completed",
+        "size": 621340,
+        "duration": 1093,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505324.4926045
+      },
+      "144": {
+        "status": "completed",
+        "size": 595960,
+        "duration": 1036,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505324.455532
+      },
+      "145": {
+        "status": "completed",
+        "size": 611376,
+        "duration": 1108,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505324.8925476
+      },
+      "146": {
+        "status": "completed",
+        "size": 611564,
+        "duration": 1093,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505325.3843093
+      },
+      "147": {
+        "status": "completed",
+        "size": 594832,
+        "duration": 1187,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505325.514075
+      },
+      "148": {
+        "status": "completed",
+        "size": 606488,
+        "duration": 1226,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505325.6540167
+      },
+      "149": {
+        "status": "completed",
+        "size": 608744,
+        "duration": 1148,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505325.637654
+      },
+      "150": {
+        "status": "completed",
+        "size": 608180,
+        "duration": 1111,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505325.6112466
+      },
+      "151": {
+        "status": "completed",
+        "size": 603856,
+        "duration": 1004,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505325.898767
+      },
+      "152": {
+        "status": "completed",
+        "size": 607052,
+        "duration": 978,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505326.3635485
+      },
+      "153": {
+        "status": "completed",
+        "size": 632432,
+        "duration": 981,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505326.498138
+      },
+      "154": {
+        "status": "completed",
+        "size": 584680,
+        "duration": 998,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505326.6069922
+      },
+      "155": {
+        "status": "completed",
+        "size": 601412,
+        "duration": 960,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505326.5718405
+      },
+      "156": {
+        "status": "completed",
+        "size": 626416,
+        "duration": 1061,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505326.6767306
+      },
+      "157": {
+        "status": "completed",
+        "size": 594268,
+        "duration": 828,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505326.72841
+      },
+      "158": {
+        "status": "completed",
+        "size": 603668,
+        "duration": 741,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505327.1046789
+      },
+      "159": {
+        "status": "completed",
+        "size": 603104,
+        "duration": 934,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505327.4330442
+      },
+      "160": {
+        "status": "completed",
+        "size": 612504,
+        "duration": 892,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505327.4638407
+      },
+      "161": {
+        "status": "completed",
+        "size": 606300,
+        "duration": 873,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505327.4819381
+      },
+      "162": {
+        "status": "completed",
+        "size": 602540,
+        "duration": 816,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505327.4942038
+      },
+      "163": {
+        "status": "completed",
+        "size": 607616,
+        "duration": 801,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505327.5313492
+      },
+      "164": {
+        "status": "completed",
+        "size": 616264,
+        "duration": 843,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505327.949183
+      },
+      "165": {
+        "status": "completed",
+        "size": 598028,
+        "duration": 1076,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505328.5115037
+      },
+      "166": {
+        "status": "completed",
+        "size": 607052,
+        "duration": 869,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505328.3347857
+      },
+      "167": {
+        "status": "completed",
+        "size": 608180,
+        "duration": 883,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505328.3670363
+      },
+      "168": {
+        "status": "completed",
+        "size": 637132,
+        "duration": 1893,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505329.3889477
+      },
+      "169": {
+        "status": "completed",
+        "size": 575468,
+        "duration": 853,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505328.3855612
+      },
+      "170": {
+        "status": "completed",
+        "size": 605360,
+        "duration": 739,
+        "start_time": 1739505300.5883238,
+        "completed_at": 1739505328.6889408
+      },
+      "171": {
+        "status": "completed",
+        "size": 605548,
+        "duration": 16798,
+        "start_time": 1739505300.5888267,
+        "completed_at": 1739505345.134245
+      },
+      "172": {
+        "status": "completed",
+        "size": 618144,
+        "duration": 841,
+        "start_time": 1739505300.5888493,
+        "completed_at": 1739505329.2262766
+      },
+      "173": {
+        "status": "completed",
+        "size": 598780,
+        "duration": 821,
+        "start_time": 1739505300.5888493,
+        "completed_at": 1739505329.2083871
+      },
+      "174": {
+        "status": "completed",
+        "size": 612316,
+        "duration": 820,
+        "start_time": 1739505300.5888493,
+        "completed_at": 1739505329.3342664
+      },
+      "175": {
+        "status": "completed",
+        "size": 596524,
+        "duration": 744,
+        "start_time": 1739505300.5888493,
+        "completed_at": 1739505329.4346697
+      },
+      "176": {
+        "status": "completed",
+        "size": 606676,
+        "duration": 862,
+        "start_time": 1739505300.5888493,
+        "completed_at": 1739505330.0815248
+      },
+      "177": {
+        "status": "completed",
+        "size": 606488,
+        "duration": 858,
+        "start_time": 1739505300.5888493,
+        "completed_at": 1739505330.069636
+      },
+      "178": {
+        "status": "completed",
+        "size": 604420,
+        "duration": 824,
+        "start_time": 1739505300.5888493,
+        "completed_at": 1739505330.1595283
+      },
+      "179": {
+        "status": "completed",
+        "size": 607428,
+        "duration": 786,
+        "start_time": 1739505300.5888493,
+        "completed_at": 1739505330.176348
+      },
+      "180": {
+        "status": "completed",
+        "size": 614384,
+        "duration": 780,
+        "start_time": 1739505300.5888493,
+        "completed_at": 1739505330.2156162
+      },
+      "181": {
+        "status": "completed",
+        "size": 118064,
+        "duration": 1663,
+        "start_time": 1739505300.5888493,
+        "completed_at": 1739505331.7333024
+      }
+    },
+    "completed_segments": 181,
+    "total_duration": 49017,
+    "end_time": 1739505347.2713056,
+    "merge_info": {
+      "progress": 100,
+      "status": "合并完成"
+    },
+    "output_file": "merged\\c1dc2886-98bb-4a83-b15b-9fc9a372fea9.mp4"
+  }
+}
