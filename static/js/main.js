@@ -220,6 +220,8 @@ $(document).ready(function() {
                     $.ajax({
                         url: `/tasks/${taskId}/merge`,
                         type: 'POST',
+                        data: JSON.stringify({ task_id: taskId }),
+                        contentType: 'application/json',
                         success: function(response) {
                             // 开始检查合并进度
                             checkMergeProgress(taskId, taskItem);
@@ -488,40 +490,32 @@ $(document).ready(function() {
         function updateTaskDetail(task) {
             // 保存当前任务ID到删除按钮
             $('.delete-task-detail').data('task-id', taskId);
+            $('.merge-segments').data('task-id', taskId);
             
             // 更新基本信息
-            $('#taskDetailTitle').text(task.title || '未知标题');
+            $('#taskDetailTitle').text(task.title || '-');
             $('#taskDetailCreatedAt').text(formatDate(task.created_at));
-            $('#taskDetailStatus').text(task.status);
-            $('#taskDetailProgress').text(task.progress + '%');
+            $('#taskDetailStatus').text(formatStatus(task.status));
+            $('#taskDetailProgress').text(task.progress ? task.progress + '%' : '0%');
             $('#taskDetailPid').text(task.pid || '-');
-            $('#taskDetailSize').text(formatSize(task.total_size || 0));
             
-            // 计算总耗时
-            const start_time = task.start_time;
-            const is_active = !task.error && task.progress < 100;
+            // 格式化并显示文件大小
+            const totalSize = task.total_size || 0;
+            $('#taskDetailSize').text(formatFileSize(totalSize));
             
-            function updateDuration() {
-                if (start_time) {
-                    const duration = is_active ? 
-                        Math.floor(Date.now() / 1000 - start_time) * 1000 :
-                        task.total_duration || 0;
-                    $('#taskDetailTotalDuration').text(formatTotalDuration(duration));
-                }
-            }
+            // 格式化并显示总耗时（使用原来的格式）
+            const totalDuration = task.total_duration || 0;
+            $('#taskDetailTotalDuration').text(formatTotalDuration(totalDuration));
             
-            // 清除之前的定时器
-            if (updateTimer) {
-                clearInterval(updateTimer);
-                updateTimer = null;
-            }
-            
-            // 只有活动任务才启动定时器
-            if (is_active) {
-                updateDuration();
-                updateTimer = setInterval(updateDuration, 1000);
+            // 根据任务状态控制按钮显示
+            if (task.status === 'failed') {
+                $('.merge-segments').show().text('重试合并');
+            } else if (task.status === 'completed') {
+                $('.merge-segments').hide();
+            } else if (task.status === 'waiting') {
+                $('.merge-segments').show().text('开始合并');
             } else {
-                updateDuration();
+                $('.merge-segments').hide();
             }
             
             // 更新片段信息
@@ -549,10 +543,10 @@ $(document).ready(function() {
     // 添加状态格式化函数
     function formatStatus(status) {
         const statusMap = {
-            'completed': '完成',
-            'failed': '失败',
-            'downloading': '下载中',
-            'waiting': '等待中'
+            'completed': '<span class="text-success">完成</span>',
+            'failed': '<span class="text-danger">失败</span>',
+            'downloading': '<span class="text-primary">下载中</span>',
+            'waiting': '<span class="text-warning">等待中</span>'
         };
         return statusMap[status] || status;
     }
@@ -564,13 +558,26 @@ $(document).ready(function() {
         return date.toLocaleString();
     }
 
-    // 辅助函数：格式化文件大小
-    function formatSize(bytes) {
-        if (bytes === 0) return '0 B';
-        const k = 1024;
-        const sizes = ['B', 'KB', 'MB', 'GB'];
-        const i = Math.floor(Math.log(bytes) / Math.log(k));
-        return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+    // 添加文件大小格式化函数
+    function formatFileSize(bytes) {
+        if (bytes === 0) return '-';
+        const sizes = ['B', 'KB', 'MB', 'GB', 'TB'];
+        const i = Math.floor(Math.log(bytes) / Math.log(1024));
+        return Math.round(bytes / Math.pow(1024, i) * 100) / 100 + ' ' + sizes[i];
+    }
+
+    // 添加总耗时格式化函数（使用原来的简单格式）
+    function formatTotalDuration(seconds) {
+        if (!seconds || seconds <= 0) return '-';
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = Math.floor(seconds % 60);
+        return `${minutes}分${remainingSeconds}秒`;
+    }
+
+    // 片段耗时保持毫秒显示
+    function formatSegmentDuration(milliseconds) {
+        if (!milliseconds || milliseconds <= 0) return '-';
+        return `${milliseconds}ms`;
     }
 
     // 添加鼠标悬停效果的CSS
@@ -607,9 +614,9 @@ $(document).ready(function() {
         }
     });
 
-    // 添加手动合并功能
+    // 修改手动合并功能
     $(document).on('click', '.merge-segments', function() {
-        const taskId = $(this).closest('.modal').data('task-id');
+        const taskId = $(this).data('task-id');
         const $mergeProgress = $('.merge-progress');
         const $progressBar = $mergeProgress.find('.progress-bar');
         const $statusText = $mergeProgress.find('p');
@@ -620,8 +627,12 @@ $(document).ready(function() {
         $statusText.text('准备合并文件...');
         
         // 发送合并请求
-        $.post(`/tasks/${taskId}/merge`)
-            .done(function(response) {
+        $.ajax({
+            url: `/tasks/${taskId}/merge`,
+            type: 'POST',
+            data: JSON.stringify({ task_id: taskId }),
+            contentType: 'application/json',
+            success: function(response) {
                 // 开始检查合并进度
                 const progressChecker = setInterval(function() {
                     $.get(`/tasks/${taskId}/merge/progress`, function(data) {
@@ -646,11 +657,12 @@ $(document).ready(function() {
                         }
                     });
                 }, 1000);
-            })
-            .fail(function(xhr) {
+            },
+            error: function(xhr) {
                 $statusText.text('合并失败: ' + (xhr.responseJSON?.error || '未知错误'));
                 $progressBar.addClass('bg-danger');
-            });
+            }
+        });
     });
 
     // 添加任务详情刷新函数
@@ -662,7 +674,7 @@ $(document).ready(function() {
             $('#taskDetailProgress').text(task.progress + '%');
             $('#taskDetailPid').text(task.pid || '-');
             $('#taskDetailSize').text(formatFileSize(task.total_size));
-            $('#taskDetailTotalDuration').text(formatDuration(task.total_duration));
+            $('#taskDetailTotalDuration').text(formatTotalDuration(task.total_duration));
             
             // 更新片段表格
             updateSegmentsTable(task.segments);
@@ -687,11 +699,16 @@ $(document).ready(function() {
     // 优化任务详情更新
     const debouncedUpdateSegmentInfo = debounce(updateSegmentInfo, 200);
 
-    // 添加删除按钮的点击处理
+    // 修改删除按钮的事件处理
     $(document).on('click', '.delete-task-detail', function(e) {
         e.preventDefault();
+        e.stopPropagation();  // 阻止事件冒泡
+        
         const taskId = $(this).data('task-id');
-        const modal = bootstrap.Modal.getInstance(document.getElementById('taskDetailModal'));
+        if (!taskId) {
+            console.error('No task ID found');
+            return;
+        }
         
         if (confirm('确定要删除这个任务吗？')) {
             $.ajax({
@@ -699,16 +716,31 @@ $(document).ready(function() {
                 type: 'DELETE',
                 success: function() {
                     // 关闭模态框
-                    modal.hide();
+                    const modal = bootstrap.Modal.getInstance(document.getElementById('taskDetailModal'));
+                    if (modal) {
+                        modal.hide();
+                    }
+                    
                     // 从任务列表中移除任务项
                     $(`.task-item[data-task-id="${taskId}"]`).fadeOut(300, function() {
                         $(this).remove();
                     });
+                    
+                    // 刷新任务列表
+                    refreshTaskList();
                 },
-                error: function() {
-                    alert('删除任务失败');
+                error: function(xhr) {
+                    alert('删除任务失败: ' + (xhr.responseJSON?.error || '未知错误'));
                 }
             });
+        }
+    });
+
+    // 确保模态框中的按钮正确绑定了taskId
+    $('#taskDetailModal').on('show.bs.modal', function () {
+        const taskId = $('.delete-task-detail').data('task-id');
+        if (!taskId) {
+            console.warn('No task ID found when showing modal');
         }
     });
 
@@ -735,34 +767,6 @@ $(document).ready(function() {
         }
     });
 
-    // 添加格式化总耗时的函数
-    function formatTotalDuration(ms) {
-        if (!ms) return '-';
-        
-        const seconds = Math.floor(ms / 1000);
-        const minutes = Math.floor(seconds / 60);
-        const hours = Math.floor(minutes / 60);
-        
-        if (hours > 0) {
-            const remainingMinutes = minutes % 60;
-            const remainingSeconds = seconds % 60;
-            return `${hours}小时${remainingMinutes}分${remainingSeconds}秒`;
-        } else if (minutes > 0) {
-            const remainingSeconds = seconds % 60;
-            return `${minutes}分${remainingSeconds}秒`;
-        } else if (seconds > 0) {
-            return `${seconds}秒`;
-        } else {
-            return `${ms}毫秒`;
-        }
-    }
-
-    // 添加格式化片段耗时的函数
-    function formatSegmentDuration(ms) {
-        if (!ms) return '-';
-        return `${ms}ms`;
-    }
-
     // 修改updateSegmentInfo函数
     function updateSegmentInfo(task) {
         const segmentsBody = $('#taskDetailSegments');
@@ -771,14 +775,7 @@ $(document).ready(function() {
         Object.entries(segments_info).forEach(([number, info]) => {
             const status = info.status;
             const size = info.size || 0;
-            const duration = info.duration;  // 单个片段下载耗时
-            const start_time = info.start_time;
-            
-            // 计算实时耗时（仅对正在下载的片段）
-            let currentDuration = duration;
-            if (status === 'downloading' && start_time) {
-                currentDuration = Math.floor((Date.now() / 1000 - start_time) * 1000);
-            }
+            const duration = info.duration || 0;  // 获取耗时（毫秒）
             
             // 更新或创建行
             let row = segmentsBody.find(`tr[data-segment="${number}"]`);
@@ -787,13 +784,8 @@ $(document).ready(function() {
                     <tr data-segment="${number}">
                         <td>${number}</td>
                         <td>
-                            <span class="badge ${
-                                status === 'completed' ? 'bg-success' : 
-                                status === 'failed' ? 'bg-danger' : 
-                                status === 'waiting' ? 'bg-secondary' :
-                                'bg-warning'
-                            }">
-                                ${formatStatus(status)}
+                            <span class="badge ${getStatusBadgeClass(status)}">
+                                ${formatStatusText(status)}
                             </span>
                             ${status === 'failed' ? `
                                 <button class="btn btn-sm btn-link retry-segment p-0 ms-2" 
@@ -802,21 +794,16 @@ $(document).ready(function() {
                                 </button>
                             ` : ''}
                         </td>
-                        <td>${formatSize(size)}</td>
-                        <td class="duration-cell">${formatSegmentDuration(currentDuration)}</td>
+                        <td>${formatFileSize(size)}</td>
+                        <td class="duration-cell">${formatSegmentDuration(duration)}</td>
                     </tr>
                 `);
                 segmentsBody.append(row);
             } else {
                 // 更新现有行
                 row.find('td:nth-child(2)').html(`
-                    <span class="badge ${
-                        status === 'completed' ? 'bg-success' : 
-                        status === 'failed' ? 'bg-danger' : 
-                        status === 'waiting' ? 'bg-secondary' :
-                        'bg-warning'
-                    }">
-                        ${formatStatus(status)}
+                    <span class="badge ${getStatusBadgeClass(status)}">
+                        ${formatStatusText(status)}
                     </span>
                     ${status === 'failed' ? `
                         <button class="btn btn-sm btn-link retry-segment p-0 ms-2" 
@@ -825,10 +812,34 @@ $(document).ready(function() {
                         </button>
                     ` : ''}
                 `);
-                row.find('td:nth-child(3)').text(formatSize(size));
-                row.find('.duration-cell').text(formatSegmentDuration(currentDuration));
+                row.find('td:nth-child(3)').text(formatFileSize(size));
+                row.find('.duration-cell').text(formatSegmentDuration(duration));
             }
         });
+    }
+
+    // 添加状态样式类获取函数
+    function getStatusBadgeClass(status) {
+        const classMap = {
+            'completed': 'bg-success',
+            'failed': 'bg-danger',
+            'downloading': 'bg-primary',
+            'waiting': 'bg-warning',
+            'error': 'bg-danger'
+        };
+        return classMap[status] || 'bg-secondary';
+    }
+
+    // 添加状态文字格式化函数
+    function formatStatusText(status) {
+        const statusMap = {
+            'completed': '已完成',
+            'failed': '失败',
+            'downloading': '下载中',
+            'waiting': '等待中',
+            'error': '错误'
+        };
+        return statusMap[status] || status;
     }
 
     // 添加视频预览模态框的事件处理

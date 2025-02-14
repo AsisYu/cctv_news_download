@@ -221,20 +221,20 @@ def merge_ts_files(task_id, file_paths, output_file):
     try:
         task_manager.update_task(task_id, {'status': '开始合并', 'progress': 0})
         
-        # 使用新的 merge_files 方法
-        result = ts_merger.merge_files(
-            input_files=file_paths,
-            output_filename=f'{task_id}.mp4'
+        # 修改这里的调用方式
+        output_file = ts_merger.merge_files(
+            file_paths,  # 直接传递文件路径列表
+            task_id     # 直接传递task_id
         )
         
-        if result['success']:
+        if output_file:  # 如果返回了输出文件路径
             task_manager.update_task(task_id, {
                 'status': '合并完成！',
                 'progress': 100,
-                'output_file': result['output_file']
+                'output_file': output_file
             })
         else:
-            raise Exception(result['message'])
+            raise Exception("合并失败")
                 
     except Exception as e:
         logger.error(f"合并失败: {str(e)}")
@@ -603,13 +603,12 @@ def process_video_download(task_id, pid, task_dir):
 
             # 使用TSMerger进行合并
             result = ts_merger.merge_files(
-                input_files=segment_files,
-                output_filename=f'{task_id}.mp4',
-                progress_callback=update_merge_progress
+                segment_files,  # 直接传递文件路径列表
+                task_id        # 直接传递task_id
             )
 
-            if not result['success']:
-                raise Exception(result['message'])
+            if not result:  # 如果返回None或False
+                raise Exception("合并失败")
 
             # 合并成功，更新任务状态
             task_manager.update_task(task_id, {
@@ -617,7 +616,7 @@ def process_video_download(task_id, pid, task_dir):
                     'progress': 100,
                     'status': '合并完成'
                 },
-                'output_file': result['output_file'],
+                'output_file': result,
                 'status': '合并完成！'
             })
 
@@ -807,37 +806,59 @@ def get_task_detail(task_id):
     if not task:
         return jsonify({'error': '任务不存在'}), 404
         
-    # 获取片段信息
-    segments_dir = os.path.join(task.get('task_dir', ''), 'segments')
-    segments = []
-    
-    # 计算总耗时
-    start_time = task.get('start_time')
-    total_duration = int((time.time() - start_time) * 1000) if start_time else 0
-    
-    if os.path.exists(segments_dir):
-        for file in sorted(os.listdir(segments_dir)):
-            if file.endswith('.ts'):
-                file_path = os.path.join(segments_dir, file)
-                # 从任务记录中获取下载耗时
-                segment_number = int(file.split('_')[1].split('.')[0])
-                segment_info = task.get('segments_info', {}).get(str(segment_number), {})
-                
-                segments.append({
-                    'status': 'completed' if os.path.getsize(file_path) > 0 else 'failed',
-                    'size': os.path.getsize(file_path),
-                    'duration': segment_info.get('duration')  # 单个片段的下载耗时
-                })
-    
-    # 扩展任务信息
-    task_detail = {
-        **task,
-        'segments': segments,
-        'total_size': sum(segment['size'] for segment in segments),
-        'total_duration': total_duration  # 使用实际总耗时
-    }
-    
-    return jsonify(task_detail)
+    try:
+        # 获取片段信息
+        segments_dir = os.path.join(task.get('task_dir', ''), 'segments')
+        segments = []
+        total_size = 0
+        
+        if os.path.exists(segments_dir):
+            for file in sorted(os.listdir(segments_dir)):
+                if file.endswith('.ts'):
+                    file_path = os.path.join(segments_dir, file)
+                    file_size = os.path.getsize(file_path) if os.path.exists(file_path) else 0
+                    total_size += file_size
+                    
+                    # 从任务记录中获取下载耗时
+                    segment_number = int(file.split('_')[1].split('.')[0])
+                    segment_info = task.get('segments_info', {}).get(str(segment_number), {})
+                    
+                    segments.append({
+                        'status': 'completed' if file_size > 0 else 'failed',
+                        'size': file_size,
+                        'duration': segment_info.get('duration')  # 单个片段的下载耗时
+                    })
+        
+        # 计算总耗时（从开始到现在，或到结束时间）
+        start_time = task.get('start_time')
+        end_time = task.get('end_time')
+        
+        if start_time:
+            if end_time:
+                total_duration = int(end_time - start_time)
+            else:
+                total_duration = int(time.time() - start_time)
+        else:
+            total_duration = 0
+        
+        # 如果有输出文件，使用输出文件的大小
+        output_file = task.get('output_file')
+        if output_file and os.path.exists(output_file):
+            total_size = os.path.getsize(output_file)
+        
+        # 扩展任务信息
+        task_detail = {
+            **task,
+            'segments': segments,
+            'total_size': total_size,
+            'total_duration': total_duration
+        }
+        
+        return jsonify(task_detail)
+        
+    except Exception as e:
+        logger.error(f"获取任务详情失败: {str(e)}")
+        return jsonify({'error': str(e)}), 500
 
 @app.route('/tasks/<task_id>/segments/<int:segment_number>/retry', methods=['POST'])
 def retry_segment(task_id, segment_number):
@@ -940,13 +961,42 @@ def start_merge(task_id):
             return jsonify({
                 'error': f'有 {len(failed_segments)} 个片段下载失败，请先重试'
             }), 400
+            
+        # 获取所有文件路径
+        task_dir = task.get('task_dir')
+        segments_dir = os.path.join(task_dir, 'segments')
         
+        if not os.path.exists(segments_dir):
+            return jsonify({'error': '片段目录不存在'}), 400
+        
+        # 获取并排序片段文件，使用绝对路径
+        segment_files = sorted(glob.glob(os.path.join(segments_dir, 'segment_*.ts')))
+        if not segment_files:
+            return jsonify({'error': '没有找到可合并的片段'}), 400
+        
+        # 验证所有文件是否存在
+        for file_path in segment_files:
+            if not os.path.exists(file_path):
+                return jsonify({'error': f'片段文件不存在: {os.path.basename(file_path)}'}), 400
+            
         # 开始合并
-        Thread(target=merge_video_segments, args=(task_id, task)).start()
+        output_file = ts_merger.merge_files(
+            segment_files,  # 传递完整的文件路径列表
+            task_id
+        )
+        
+        if not output_file:
+            return jsonify({'error': '合并失败'}), 500
+        
+        # 更新任务状态
+        task['status'] = 'completed'
+        task['output_file'] = output_file
+        task_manager.save_task(task)
         
         return jsonify({'message': '开始合并'})
         
     except Exception as e:
+        logger.error(f"合并失败: {str(e)}")
         return jsonify({'error': str(e)}), 500
 
 @app.route('/tasks/<task_id>/merge/progress')
@@ -999,13 +1049,12 @@ def merge_video_segments(task_id, task):
 
         # 使用TSMerger进行合并
         result = ts_merger.merge_files(
-            input_files=segment_files,
-            output_filename=f'{task_id}.mp4',
-            progress_callback=update_merge_progress
+            segment_files,  # 直接传递文件路径列表
+            task_id        # 直接传递task_id
         )
 
-        if not result['success']:
-            raise Exception(result['message'])
+        if not result:  # 如果返回None或False
+            raise Exception("合并失败")
 
         # 更新任务状态
         end_time = time.time()
@@ -1017,7 +1066,7 @@ def merge_video_segments(task_id, task):
                 'status': '合并完成',
                 'duration': merge_duration
             },
-            'output_file': result['output_file'],
+            'output_file': result,
             'status': '合并完成！'
         })
         

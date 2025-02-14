@@ -19,7 +19,7 @@ class TSMerger:
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
 
-    def merge_files(self, file_paths, task_id):
+    def merge_files(self, file_paths: List[str], task_id: str):
         """
         合并TS文件
         
@@ -36,10 +36,14 @@ class TSMerger:
         filelist_path = os.path.join(work_dir, 'filelist.txt')
         
         try:
-            # 创建文件列表
+            # 创建文件列表，使用绝对路径
             with open(filelist_path, 'w', encoding='utf-8') as f:
                 for file_path in file_paths:
-                    f.write(f"file '{file_path}'\n")
+                    # 转换为绝对路径
+                    abs_path = os.path.abspath(file_path)
+                    # 使用正斜杠替换反斜杠
+                    safe_path = abs_path.replace('\\', '/')
+                    f.write(f"file '{safe_path}'\n")
             
             # 设置输出文件路径
             output_file = os.path.join(self.output_dir, f'{task_id}.mp4')
